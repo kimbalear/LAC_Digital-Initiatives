@@ -1,0 +1,54 @@
+.custom_tab {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid $momentum_clr11;
+    border-left: none;
+    border-radius: 0;
+    background: transparent;
+    color: $momentum_clr12;
+    font-weight: bold;
+
+    .ui-state-default {
+        border: 1px solid $momentum_clr11;
+        background: $clr4;
+        font-weight: bold;
+        color: $momentum_clr12;
+    }
+
+    .ui-state-active {
+        border: 1px solid $momentum_clr11;
+        background-color: $tb1_clr1;
+        font-weight: bold;
+        color: $momentum_clr12;
+    }
+
+    a.ui-button {
+        &:active {
+            border: 1px solid $momentum_clr11;
+            background-color: $tb1_clr1;
+            font-weight: bold;
+            color: $momentum_clr12;
+        }
+    }
+
+    .ui-state-active a,
+    .ui-state-active a:link,
+    .ui-state-active a:visited {
+        color: $momentum_clr12 !important;
+    }
+
+    .ui-state-default a,
+    .ui-state-default a:link,
+    a.ui-button,
+    a:link.ui-button,
+    .ui-button {
+        color: $momentum_clr11;
+    }
+
+}
+
+.content_tabs {
+    width: 100%;
+    min-height: 300px;
+    overflow-y: auto;
+}
