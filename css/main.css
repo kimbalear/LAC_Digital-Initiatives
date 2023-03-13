@@ -1650,7 +1650,6 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   font-family: "Roboto", sans-serif;
-  display: none;
   grid-template-areas: "l1 ans";
 }
 .grdTb2-a1 .l1 {
@@ -1671,7 +1670,7 @@
   flex-direction: row;
 }
 
-.grdTb2-a1s {
+.grdTb2-a1s, #ecyes {
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: 48px;
@@ -1679,10 +1678,9 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   font-family: "Roboto", sans-serif;
-  display: none;
   grid-template-areas: "l1 ans";
 }
-.grdTb2-a1s .l1 {
+.grdTb2-a1s .l1, #ecyes .l1 {
   grid-area: l1;
   color: #151F6D;
   background-color: rgba(156, 226, 242, 0.2117647059);
@@ -1691,7 +1689,7 @@
   display: flex;
   align-items: center;
 }
-.grdTb2-a1s .ans {
+.grdTb2-a1s .ans, #ecyes .ans {
   grid-area: ans;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
@@ -1708,7 +1706,6 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   font-family: "Roboto", sans-serif;
-  display: none;
   grid-template-areas: "l1 ans1" "l1 ans2";
 }
 .grdTb2-a2 .l1 {
@@ -1744,7 +1741,6 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   font-family: "Roboto", sans-serif;
-  display: none;
   grid-template-areas: "l1 ansa" "l1 ansb" "l1 ansc" "l1 ansd";
 }
 .grdTb2-a4 .l1 {
