@@ -1,77 +1,91 @@
 $(document).ready(function () {
 
+    $("#mycustomtab li").eq(0).css("background-color", "#DAECDB");
+    $("#mycustomtab li").eq(1).css("background-color", "#f7e2fd");
+    $("#mycustomtab li").eq(2).css("background-color", "#ffead0");
+    $("#OBS").css("background-color", "#DAECDB");
+    $("#FIS").css("background-color", "#f7e2fd");
+    $("#FPL").css("background-color", "#ffead0");
     $("body").on("focus", "input", function (event) {
         $(this).attr('autocomplete', 'off')
     });
 
-    $('.tabs .tab-links a').on('click', function (e) {
-        var currentAttrValue = $(this).attr('href');
+    $('.custom_tab li').click(function (e) {
+        tab_selected = $(this).find('a').attr('href');
+        switch (tab_selected) {
+            case '#OBS':
+                $(this).attr('tabindex', '0');
+                $(this).addClass('ui-state-hover');
+                $(this).addClass('ui-tabs-active');
+                $('.ui-tabs-active').css("background-color", "#DAECDB");
+                $(this).addClass('ui-state-active');
+                $(this).attr('aria-selected', 'true');
+                $(this).attr('aria-expanded', 'true');
+                $('#OBS').attr('aria-hidden', 'false');
+                $('#OBS').css({
+                    'display': 'block'
+                });
+                break;
+            case '#FIS':
+                $(this).attr('tabindex', '0');
+                $(this).addClass('ui-state-hover');
+                $(this).addClass('ui-tabs-active');
+                $('.ui-tabs-active').css("background-color", "#f7e2fd");
+                $(this).addClass('ui-state-active');
+                $('.ui-state-activ').css("background-color", "#f7e2fd");
+                $(this).attr('aria-selected', 'true');
+                $(this).attr('aria-expanded', 'true');
+                $('#FIS').attr('aria-hidden', 'false');
+                $('#FIS').css({
+                    'display': 'block'
+                });
+                break;
+            case '#FPL':
 
-        // Show/Hide Tabs
-        $('.tabs ' + currentAttrValue).show().siblings().hide();
-
-        // Change/remove current tab to active
-        $(this).parent('li').addClass('active').siblings().removeClass('active');
-
-        e.preventDefault();
+                $(this).attr('tabindex', '0');
+                $(this).addClass('ui-state-hover');
+                $(this).addClass('ui-tabs-active');
+                $('.ui-tabs-active').css("background-color", "#ffead0");
+                $(this).addClass('ui-state-active');
+                $(this).attr('aria-selected', 'true');
+                $(this).attr('aria-expanded', 'true');
+                $('#FPL').attr('aria-hidden', 'false');
+                $('#FPL').css({
+                    'display': 'block'
+                });
+                break;
+        }
     });
 
-    /*
+    // Form ansewer Show hide
+    $('input[type="radio"]').click(function () {
+        if ($(this).is(':checked')) {
+            var value = $(this).val();
+            rbselected(value);
+        }
+    });
 
-  $('.custom_tab li').click(function (e) {
-      tab_selected = $(this).find('a').attr('href');
-      switch (tab_selected) {
-          case '#OBS':
-              $(this).attr('tabindex', '0');
-              $(this).addClass('ui-state-hover');
-              $(this).addClass('ui-tabs-active');
-              $(this).addClass('ui-state-active');
-              $(this).attr('aria-selected', 'true');
-              $(this).attr('aria-expanded', 'true');
-              $('#OBS').attr('aria-hidden', 'false');
-              $('#OBS').css({
-                  'display': 'block'
-              });
-              break;
-          case '#FIS':
-              $(this).attr('tabindex', '0');
-              $(this).addClass('ui-state-hover');
-              $(this).addClass('ui-tabs-active');
-              $(this).addClass('ui-state-active');
-              $(this).attr('aria-selected', 'true');
-              $(this).attr('aria-expanded', 'true');
-              $('#FIS').attr('aria-hidden', 'false');
-              $('#FIS').css({
-                  'display': 'block'
-              });
-              break;
-          case '#FPL':
-              $(this).attr('tabindex', '0');
-              $(this).addClass('ui-state-hover');
-              $(this).addClass('ui-tabs-active');
-              $(this).addClass('ui-state-active');
-              $(this).attr('aria-selected', 'true');
-              $(this).attr('aria-expanded', 'true');
-              $('#FPL').attr('aria-hidden', 'false');
-              $('#FPL').css({
-                  'display': 'block'
-              });
-              break;
-      }
-  });
-
-  */
+    function rbselected(rbsctd) {
+        switch (rbsctd) {
+            case 'ecYes':
+                console.log('Radio button seleccionado: ' + rbsctd);
+                break;
+            case 'ecNo':
+                console.log('Radio button seleccionado: ' + rbsctd);
+                break;
+        }
+    }
 });
 
 $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', function () {
-    if ($("#MPHDCustomForm").length > 0) {
-        $(".tabs").tabs();
-        $("#MPHDCustomForm_Content").hide();
+    if ($("#CustomForm").length > 0) {
+        $("#tabs").tabs();
+        $("#CustomForm_Content").hide();
         $("#loaderDiv").show();
 
         new MPHDTranslation(function () {
             $("#loaderDiv").hide();
-            $("#MPHDCustomForm_Content").show();
+            $("#CustomForm_Content").show();
         });
     }
 
@@ -83,29 +97,17 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 
         me.exeFunc = _exeFunc;
 
-        me.selectedDataSetIdTag = $("#selectedDataSetId");
-
         me.optionSetTermId = "P88VKdNPi28";
 
         me.loadedDataSetElementList = false;
         me.loadedOptionSetList = false;
 
-        me.DATAELEMENT_KEY = "de_id";
-        me.INDICATOR_KEY = "ind_id";
-        me.CATOPTION_KEY = "catOpt_id";
         me.OPTION_KEY = "opt_c";
 
 
         // ----------------------------------------------------------------------------------------------
         // URLs
 
-        me.PARAM_DATASET_ID = "@me.PARAM_DATASET_ID";
-        console.log(me.PARAM_DATASET_ID);
-        console.log(me.optionSetTermId);
-
-        // me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID + ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription],categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
-        me.QUERY_URL_DATASET = "../api/dataSets/" + me.PARAM_DATASET_ID +
-            ".json?fields=dataSetElements[dataElement[id,displayFormName,displayDescription,categoryCombo[categories[categoryOptions[id,displayName,displayDescription]],optionSet[options[code,displayName]]]]],indicators[id,displayName]";
         me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId +
             ".json?fields=options[code,displayName]&paging=false";
 
@@ -121,88 +123,11 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
 
         me.init = function () {
             console.log("INIT translation ... ");
-            me.translateDataSetElementList();
             me.translateOptionSetList();
         }
 
         // ----------------------------------------------------------------------------------------------
         // Supportive methods
-
-        me.translateDataSetElementList = function () {
-            var url = encodeURI(me.QUERY_URL_DATASET);
-            url = url.replace(me.PARAM_DATASET_ID, me.selectedDataSetIdTag.val());
-
-            me.loadMetadata(url, function (response) {
-
-                // Translate Data elements & Get CatOptions Map
-                var catOptionMap = {};
-                var dataSetElements = response.dataSetElements;
-
-                for (var i in dataSetElements) {
-                    var dataElement = dataSetElements[i].dataElement;
-
-                    // Translation for FORMNAME of DEs
-                    var deDivTag = me.tableTag.find("[keyword='" + me.DATAELEMENT_KEY + ":" + dataElement.id + "']");
-                    deDivTag.html(dataElement.displayFormName);
-
-                    // Translation for DESCRIPTION of DEs
-                    var descriptionDivTag = deDivTag.closest("div").find(".cta_dg");
-                    if (descriptionDivTag.length > 0 && dataElement.displayDescription != undefined) {
-                        descriptionDivTag.attr("description", dataElement.displayDescription);
-                    }
-
-                    // Get CatOptions Map
-                    var categories = dataElement.categoryCombo.categories;
-                    for (var i in categories) {
-                        var categoryOptions = categories[i].categoryOptions;
-                        for (var j in categoryOptions) {
-                            var categoryOption = categoryOptions[j];
-                            catOptionMap[categoryOption.id] = categoryOption;
-                        }
-                    }
-
-                }
-
-                // Translation categories
-                for (var key in catOptionMap) {
-                    var catOption = catOptionMap[key];
-
-                    // For CatOption NAME
-                    var catOptionDivTag = me.tableTag.find("[keyword='" + me.CATOPTION_KEY + ":" + key + "']");
-                    catOptionDivTag.html(catOption.displayName);
-
-                    // For CatOption Description
-                    var descriptionDivTag = catOptionDivTag.closest("div").find(".cta_dg");
-                    if (descriptionDivTag.length > 0 && catOption.displayDescription != undefined) {
-                        descriptionDivTag.attr("description", catOption.displayDescription);
-                    }
-
-
-                }
-
-
-                // Translate Indicators
-                var indicators = response.indicators;
-                for (var i in indicators) {
-                    var indicator = indicators[i];
-                    // Translation for NAME of Indicator
-                    var indicatorDivTag = me.tableTag.find("[keyword='" + me.INDICATOR_KEY + ":" + indicator.id +
-                        "']");
-                    indicatorDivTag.html(indicator.displayName);
-
-                    // Translation for DESCRIPTION of Indicator
-                    var descriptionDivTag = indicatorDivTag.closest("div").find(".cta_dg");
-                    if (descriptionDivTag.length > 0 && indicator.displayDescription != undefined) {
-                        descriptionDivTag.attr("description", indicator.displayDescription);
-                    }
-                }
-
-                me.loadedDataSetElementList = true;
-                me.afterLoadedTranslationData();
-
-            });
-
-        }
 
         me.translateOptionSetList = function () {
             var url = encodeURI(me.QUERY_URL_TERMS);
@@ -213,20 +138,10 @@ $(document).off('dhis2.de.event.formLoaded').on('dhis2.de.event.formLoaded', fun
                     var option = options[j];
                     var value = option.displayName;
                     me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']").html(value);
-                    me.tableTag.find("[keyword-data='" + me.OPTION_KEY + ":" + option.code + "']").attr(
-                        "keyword-data", value);
                 }
 
-                me.loadedOptionSetList = true;
-                me.afterLoadedTranslationData();
-            });
-        }
-
-        me.afterLoadedTranslationData = function () {
-            if (me.loadedDataSetElementList && me.loadedOptionSetList) {
-
                 me.exeFunc();
-            }
+            });
         }
 
         me.loadMetadata = function (url, exeFunc) {

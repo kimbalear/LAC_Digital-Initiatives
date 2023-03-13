@@ -2,38 +2,26 @@
 
 .grdTb2-1a {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 48px 48px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'Roboto', sans-serif;
     grid-template-areas:
-        "t1 t2"
-        "l1 ans1";
+        "t1 t1"
+        "l1 ans";
 
     .t1 {
         grid-area: t1;
         color: $clr_ps;
         background-color: $clr_s;
         border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
         border-top: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
-        padding: 8px;
-    }
-
-    .t2 {
-        grid-area: t2;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 8px;
     }
 
@@ -45,33 +33,27 @@
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
-        padding: 8px;
     }
 
-    .ans1 {
-        grid-area: ans1;
+    .ans {
+        grid-area: ans;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .grdTb2-a1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 48px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'Roboto', sans-serif;
+    display: none;
     grid-template-areas:
         "l1 ans";
 
@@ -82,8 +64,7 @@
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
-        align-items: center;
-        padding: 8px;
+        align-items: center
     }
 
     .ans {
@@ -91,25 +72,20 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .grdTb2-a1s {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 48px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'Roboto', sans-serif;
+    display: none;
     grid-template-areas:
         "l1 ans";
 
@@ -121,7 +97,6 @@
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
-        padding: 8px 8px 8px 20px;
     }
 
     .ans {
@@ -129,25 +104,20 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 }
 
 .grdTb2-a2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, minmax(48px, auto));;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: repeat(2, 48px);
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'Roboto', sans-serif;
+    display: none;
     grid-template-areas:
         "l1 ans1"
         "l1 ans2";
@@ -159,8 +129,6 @@
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
-        align-items: center;
-        padding: 8px 8px 8px 20px;
     }
 
     .ans1 {
@@ -168,8 +136,8 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-        padding: 8px;
-        color: $clr_p;
+        display: flex;
+        flex-direction: row;
     }
 
     .ans2 {
@@ -177,35 +145,20 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        .lbl {
-            float: left;
-            width: 30%;
-            padding: 8px;
-            color: $clr_p;
-        }
-
-        .ent {
-            width: 60%;
-
-            input {
-                float: left;
-                width: 80%;
-                border: none !important;
-                padding: 2px 8px;
-            }
-        }
+        display: flex;
+        flex-direction: row;
     }
 }
 
-.grdTb2-a4{
+.grdTb2-a4 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, minmax(48px, auto));;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: repeat(4, 48px);
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'Roboto', sans-serif;
+    display: none;
     grid-template-areas:
         "l1 ansa"
         "l1 ansb"
@@ -219,8 +172,6 @@
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
-        align-items: center;
-        padding: 8px 8px 8px 20px;
     }
 
     .ansa {
@@ -228,16 +179,8 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-        padding: 8px;
-        color: $clr_p;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 
     .ansb {
@@ -245,16 +188,8 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-        padding: 8px;
-        color: $clr_p;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 
     .ansc {
@@ -262,16 +197,8 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-        padding: 8px;
-        color: $clr_p;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        flex-direction: row;
     }
 
     .ansd {
@@ -279,23 +206,23 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        .lbl {
-            float: left;
-            width: 30%;
-            padding: 8px;
-            color: $clr_p;
-        }
-
-        .ent {
-            width: 60%;
-
-            input {
-                float: left;
-                width: 80%;
-                border: none !important;
-                padding: 2px 8px;
-            }
-        }
+        display: flex;
+        flex-direction: row;
     }
+}
+
+.lv0 {
+    padding: 8px;
+}
+
+.lv1 {
+    padding: 8px 8px 8px 20px;
+}
+
+.lv2 {
+    padding: 8px 8px 8px 40px;
+}
+
+.lv3 {
+    padding: 8px 8px 8px 60px;
 }
