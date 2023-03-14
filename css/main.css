@@ -5483,13 +5483,13 @@
 }
 .custom_tab .ui-state-active {
   border: 1px solid #7D7D7D;
-  background-color: #9CE2F2;
+  background-color: #DAECDB;
   font-weight: bold;
   color: #323132;
 }
 .custom_tab a.ui-button:active {
   border: 1px solid #7D7D7D;
-  background-color: #9CE2F2;
+  background-color: #DAECDB;
   font-weight: bold;
   color: #323132;
 }
