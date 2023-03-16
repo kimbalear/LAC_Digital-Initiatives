@@ -84,7 +84,7 @@ $(document).ready(function () {
         <div class="ans">
             <input type="radio" name="q2" value="oneyes_y"/>
             <label for="Yes">Yes</label>
-            <input type="radio" name="q2" value="oneyes_n/">
+            <input type="radio" name="q2" value="oneyes_n">
             <label for="No">No</label>
         </div>
     </div>`
@@ -132,6 +132,8 @@ $(document).ready(function () {
             <input />
         </div>
     </div>`
+
+    //
 
     const twoyes = `<div id="twoyes" class="grdTb2-a1s">
         <div class="l1 lv1">If yes, did your clinic provide Post-Exposure Prophylaxis for HIV to survivors during this reporting period?</div>
@@ -188,7 +190,6 @@ $(document).ready(function () {
     </div>`
 
     function rbselected(rbsctd) {
-        console.log('===>> ' + rbsctd);
         switch (rbsctd) {
             // Q1
             case 'oneyes':
@@ -243,7 +244,7 @@ $(document).ready(function () {
                     $("#twono").remove();
                     $("#twono-n").remove();
                     $("#two").after(twoyes)
-                    console.log('Radio button seleccionado: twoyes== ' + rbsctd);
+                    console.log('Radio button seleccionado 2/yes: ' + rbsctd);
                 }
                 break;
             case 'twoyes_y':
@@ -251,13 +252,13 @@ $(document).ready(function () {
                     $("#twoyes-n").remove();
                     $("#twono").remove();
                     $("#twono-n").remove();
-                    console.log('Radio button seleccionado: ' + rbsctd);
+                    console.log('Radio button seleccionado: x ' + rbsctd);
                 }
                 break;
             case 'twoyes_n':
                 if (!$("#twoyes-n").length) {
                     $("#twoyes").after(twoyes_n)
-                    console.log('Radio button seleccionado: ' + rbsctd);
+                    console.log('Radio button seleccionado 2/no: ' + rbsctd);
                 }
                 break;
             case 'twono':
