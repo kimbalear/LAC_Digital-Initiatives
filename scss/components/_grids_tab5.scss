@@ -3,11 +3,12 @@
 .grdTb5-1 {
     display: grid;
     grid-template-columns: 1fr repeat(8, 120px);
-    grid-template-rows: repeat(10, 48px);
+    grid-template-rows: repeat(11, 48px);
     gap: 0px 0px;
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t1 t1 t1 t2 t2 t2 t2"
         "title t11 t12 t13 tt1t t21 t22 t23 tt2t"
@@ -18,7 +19,8 @@
         "l5 l5_11 l5_12 l5_13 l5_tt1t l5_21 l5_22 l5_23 l5_tt2t"
         "l6 l6_11 l6_12 l6_13 l6_tt1t l6_21 l6_22 l6_23 l6_tt2t"
         "l7 l7_11 l7_12 l7_13 l7_tt1t l7_21 l7_22 l7_23 l7_tt2t"
-        "l8 l8_11 l8_12 l8_13 l8_tt1t l8_21 l8_22 l8_23 l8_tt2t";
+        "l8 l8_11 l8_12 l8_13 l8_tt1t l8_21 l8_22 l8_23 l8_tt2t"
+        "l9 l9_11 l9_12 l9_13 l9_tt1t l9_21 l9_22 l9_23 l9_tt2t";
 
     .title {
         grid-area: title;
@@ -1083,6 +1085,124 @@
             padding: 2px 8px;
         }
     }
+    //
+    .l9 {
+        grid-area: l9;
+        color: $clr_p;
+        background-color: $clr_ss;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;        
+    }
+
+    .l9_11 {
+        grid-area: l9_11;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_12 {
+        grid-area: l9_12;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_13 {
+        grid-area: l9_13;
+        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_tt1t {
+        grid-area: l9_tt1t;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_21 {
+        grid-area: l9_21;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_22 {
+        grid-area: l9_22;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_23 {
+        grid-area: l9_23;
+        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l9_tt2t {
+        grid-area: l9_tt2t;
+        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
 }
 
 .grdTb5-2 {
@@ -1093,6 +1213,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2"
         "l1 l1c2 l1c3"
@@ -1238,6 +1359,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
 
         input {
             width: 80%;
@@ -1266,13 +1392,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
 
@@ -1294,13 +1418,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
     .l4c2 {
@@ -1321,13 +1443,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
     .l5c2 {
@@ -1348,13 +1468,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
     .l6c2 {
@@ -1375,13 +1493,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
     .l7c2 {
@@ -1402,13 +1518,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 
 }
@@ -1422,6 +1536,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "t1 t2"
         "l1 l1_1";
@@ -1486,6 +1601,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2 t3 tt"
         "l1 l1c2 l1c3 l1c4 total1"

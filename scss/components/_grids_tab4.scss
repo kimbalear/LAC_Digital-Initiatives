@@ -9,6 +9,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "t1 t2"
         "l1 l1_1";
@@ -74,6 +75,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "t1 t2 t3"
         "l1 l1_1 l1_2";
@@ -146,14 +148,11 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        color: $clr_p;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
     }
 }
 
@@ -165,6 +164,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2 t3 tt"
         "l1 l1c2 l1c3 l1c4 l1tt"
@@ -504,6 +504,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "t1 t2 t3 tt"
         "l1 l1_1 l1_2 l1_tt"

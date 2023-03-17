@@ -8,6 +8,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2 t3 tt"
         "l1 l1c2 l1c3 l1c4 l1tt"
@@ -134,6 +135,18 @@
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
+        padding: 8px;
+    }
+
+    .l6 {
+        grid-area: l6;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
         padding: 8px;
     }
 
@@ -465,6 +478,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2 t3 tt"
         "l1 l1c2 l1c3 l1c4 l1tt"
@@ -591,6 +605,18 @@
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
+        padding: 8px;
+    }
+
+    .l6 {
+        grid-area: l6;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
         padding: 8px;
     }
 
@@ -919,6 +945,7 @@
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
         "title t1 t2 t3 tt"
         "l1 l1c2 l1c3 l1c4 l1tt"
@@ -1122,56 +1149,33 @@
 .grdTb1-4 {
     clear: both;
     display: grid;
-    grid-template-columns: auto auto 1fr 120px 1fr 120px;
-    grid-template-rows: repeat(14, 48px);
+    grid-template-columns: 120px auto 1fr 1fr;
+    grid-template-rows: repeat(17, 48px);
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    width: 95%;
     grid-template-areas:
-        "title title t1 total1 t2 total2"
-        "g1 g1tl1 g1c1l1 g1t1 g1c2l1 g1t2"
-        "g1 g1tl2 g1c1l2 g1t1 g1c2l2 g1t2"
-        "g1 g1tl3 g1c1l3 g1t1 g1c2l3 g1t2"
-        "g2 g2tl1 g2c1l1 g2t1 g2c2l1 g2t2"
-        "g2 g2tl2 g2c1l2 g2t1 g2c2l2 g2t2"
-        "g2 g2tl3 g2c1l3 g2t1 g2c2l3 g2t2"
-        "g3 g3tl1 g3c1l1 g3t1 g3c2l1 g3t2"
-        "g3 g3tl2 g3c1l2 g3t1 g3c2l2 g3t2"
-        "g3 g3tl3 g3c1l3 g3t1 g3c2l3 g3t2"
-        "g4 g4tl1 g4c1l1 g4t1 g4c2l1 g4t2"
-        "g4 g4tl2 g4c1l2 g4t1 g4c2l2 g4t2"
-        "g4 g4tl3 g4c1l3 g4t1 g4c2l3 g4t2"
-        "cc1 cc1 cc1 c1t cc2 c2t";
-
-    .c1t {
-        grid-area: c1t;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
-    }
-
-    .c2t {
-        grid-area: c2t;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
-    }
+        "title title t1 t2"
+        "g1 g1tl1 g1c1l1 g1c2l1"
+        "g1 g1tl2 g1c1l2 g1c2l2"
+        "g1 g1tl3 g1c1l3 g1c2l3"
+        "g1tt g1tt g1c1l3t g1c2l3t"
+        "g2 g2tl1 g2c1l1 g2c2l1"
+        "g2 g2tl2 g2c1l2 g2c2l2"
+        "g2 g2tl3 g2c1l3 g2c2l3"
+        "g2tt g2tt g2c1l3t g2c2l3t"
+        "g3 g3tl1 g3c1l1 g3c2l1"
+        "g3 g3tl2 g3c1l2 g3c2l2"
+        "g3 g3tl3 g3c1l3 g3c2l3"
+        "g3tt g3tt g3c1l3t g3c2l3t"
+        "g4 g4tl1 g4c1l1 g4c2l1"
+        "g4 g4tl2 g4c1l2 g4c2l2"
+        "g4 g4tl3 g4c1l3 g4c2l3"
+        "g4tt g4tt g4c1l3t g4c2l3t"
+        "cc1 cc1 cc1 cc2";
 
     .title {
         grid-area: title;
@@ -1198,39 +1202,11 @@
         padding: 8px;
     }
 
-    .total1 {
-        grid-area: total1;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
     .t2 {
         grid-area: t2;
         color: $clr_ps;
         background-color: $clr_s;
         border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .total2 {
-        grid-area: total2;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
         border-top: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
@@ -1374,8 +1350,20 @@
         }
     }
 
-    .g1t1{
-        grid-area: g1t1;
+    .g1tt {
+        grid-area: g1tt;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 8px;
+    }
+
+    .g1c1l3t {
+        grid-area: g1c1l3t;
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
@@ -1387,10 +1375,9 @@
         }
     }
 
-    .g1t2{
-        grid-area: g1t2;
+    .g1c2l3t {
+        grid-area: g1c2l3t;
         border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
         input {
@@ -1564,6 +1551,44 @@
         }
     }
 
+    .g2tt {
+        grid-area: g2tt;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 8px;
+    }
+
+    .g2c1l3t {
+        grid-area: g2c1l3t;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .g2c2l3t {
+        grid-area: g2c2l3t;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
     .g3 {
         grid-area: g3;
         color: $clr_ps;
@@ -1686,8 +1711,20 @@
         }
     }
 
-    .g3t1{
-        grid-area: g3t1;
+    .g3tt {
+        grid-area: g3tt;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 8px;
+    }
+
+    .g3c1l3t {
+        grid-area: g3c1l3t;
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
@@ -1699,10 +1736,9 @@
         }
     }
 
-    .g3t2{
-        grid-area: g3t2;
+    .g3c2l3t {
+        grid-area: g3c2l3t;
         border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
         input {
@@ -1835,8 +1871,20 @@
         }
     }
 
-    .g4t1{
-        grid-area: g4t1;
+    .g4tt {
+        grid-area: g4tt;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 8px;
+    }
+
+    .g4c1l3t {
+        grid-area: g4c1l3t;
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
@@ -1848,10 +1896,9 @@
         }
     }
 
-    .g4t2{
-        grid-area: g4t2;
+    .g4c2l3t {
+        grid-area: g4c2l3t;
         border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
         input {
