@@ -176,8 +176,7 @@ $(document).ready(function () {
         </div>
     </div>`
 
-    const twono_n =
-        `<div id="twono-n" class="grdTb2-a2">
+    const twono_n = `<div id="twono-n" class="grdTb2-a2">
         <div class="l1 lv3">If no, Why?</div>
         <div class="ans1">
             <input type="radio" name="q10" value="twono_n1"/>
