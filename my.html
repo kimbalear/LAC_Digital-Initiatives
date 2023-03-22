@@ -7906,14 +7906,16 @@
                 <div class="grdTb2-1a" id="one">
                     <div class="t1">Sexual and Gender-Based Violence</div>
                     <div class="l1 lv0">Is your clinic set up to provide emergency contraception to survivors?</div>
-                    <div class="ans radioBtn" lables="Yes,No" name="q1" values="oneyes,oneno"></div>
+                    <div class="ans rdOne" lables="Yes,No" name="q1" values="oneyes,oneno"></div>
                 </div>
+
+                <br/><br/><br/>
 
                 <div class="grdTb2-a1" id="two">
                     <div class="l1 lv0">Is your clinic set up to provide Post-Exposure Prophylaxis for HIV to
                         survivors?</div>
 
-                    <div class="ans radioBtn" lables="Yes,No" name="q6" values="twoyes,twono"></div>
+                    <div class="ans rdTwo" lables="Yes,No" name="q6" values="twoyes,twono"></div>
                 </div>
             </div>
 
@@ -8643,10 +8645,11 @@
             me.renderRadioBtnTags();
         }
 
+
         me.renderRadioBtnTags = function () {
             // <div class="radioBtn" name="q1" values="oneyes,oneno" lables="Yes,No"></div>
             // <input name="q1" type="radio" value="" /> <label for="Yes">Yes</label> <input name="q1" type="radio" value="" /> <label for="No">No</label></div>
-            $(".radioBtn").each(function () {
+            $(".rdOne").each(function () {
                 $(this).html("");
 
                 var name = $(this).attr("name");
@@ -8654,61 +8657,221 @@
                 var lables = $(this).attr("lables").split(",");
                 for (var i = 0; i < values.length; i++) {
                     let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
-                    console.log("inputTag= " + inputTag)
+
                     inputTag.click(function () {
+                        console.log(inputTag.val());
                         me.rbselected(inputTag.val());
                     });
 
                     $(this).append(inputTag);
                     $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
-                    console.log("Label= " + "<label for='" + lables[i] + "'>" + lables[i] + "</label>")
+                }
+            })
 
+            $(".rdTwo").each(function () {
+                $(this).html("");
 
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_oneyes").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_oneyes_n").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_oneno").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_oneno_n").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_twoyes").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_twoyes_n").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_twono").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+                }
+            })
+
+            $(".rd_twono_n").each(function () {
+                $(this).html("");
+
+                var name = $(this).attr("name");
+                var values = $(this).attr("values").split(",");
+                var lables = $(this).attr("lables").split(",");
+                for (var i = 0; i < values.length; i++) {
+                    let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+
+                    inputTag.click(function () {
+                        console.log(inputTag.val());
+                        me.rbselected(inputTag.val());
+                    });
+
+                    $(this).append(inputTag);
+                    $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
                 }
             })
         }
 
+
+
         me.rbselected = function (rbsctd) {
+            console.log(rbsctd);
             const oneyes = `<div id="oneyes" class="grdTb2-a1s">
           <div class="l1 lv1">If yes, did your clinic provide emergency contraception to survivors during this reporting period?</div>
-          <div class="ans radioBtn" lables="Yes,No" name="q2" values="oneyes_y,oneyes_n"></div>
+          <div class="ans rd_oneyes" lables="Yes,No" name="q2" values="oneyes_y,oneyes_n"></div>
       </div>`
 
-            const oneyes_n = `<div id="oneyes-n" class="grdTb2-a4">
-          <div class="l1 lv1">If no, why is this service not available?</div>
-          <div class="ansa radioBtn" lables="National policy does not allow,No stock available,No trained staff,Other:" name="q3" values="oneyes_n1,oneoneyes_n2,oneyes_n3,oneyes_n4"></div>
-      </div>`
+            const oneyes_n = `<div id="oneyes-n" class="grdTb2-a4"><div id="oneyes_n" class="l1 lv1">If no, why is this service not available?</div></div>`
 
             const oneno = `<div id="oneno" class="grdTb2-a1s">
           <div class="l1 lv1">If no, can your clinic support survivors to access emergency contraception elsewhere through a safe referral?</div>
-          <div class="ans radioBtn" lables="Yes,No" name="q4" values="onenoyes,onenono"></div>
+          <div class="ans rd_oneno" lables="Yes,No" name="q4" values="onenoyes,onenono"></div>
       </div>`
 
-            const oneno_n = `<div id="oneno-n" class="grdTb2-a2">
-          <div class="l1 lv3">If no, Why?</div>
-          <div class="ans1 radioBtn" lables="No one in the area provides this service,Other:" name="q5" values="oneno_n1,oneno_n2"></div>
-      </div>`
+            const oneno_n = `<div id="oneno-n" class="grdTb2-a2"><div id="oneno_n" class="l1 lv3">If no, Why?</div></div>`
 
             const twoyes = `<div id="twoyes" class="grdTb2-a1s">
           <div class="l1 lv1">If yes, did your clinic provide Post-Exposure Prophylaxis for HIV to survivors during this reporting period?</div>
-          <div class="ans radioBtn" lables="Yes,No" name="q7" values="twoyes_y,twoyes_n"></div>
+          <div class="ans rd_twoyes" lables="Yes,No" name="q7" values="twoyes_y,twoyes_n"></div>
       </div>`
 
-            const twoyes_n = `<div id="twoyes-n" class="grdTb2-a4">
-          <div class="l1 lv1">If no, why is this service not available?</div>
-          <div class="ansa radioBtn" lables="National policy does not allow,No stock available,No trained staff,Other:" name="q8" values="twoyes_n1,twoyes_n2,twoyes_n3,twoyes_n4"></div>
-      </div>`
+            const twoyes_n = `<div id="twoyes-n" class="grdTb2-a4"><div id="twoyes_n" class="l1 lv1">If no, why is this service not available?</div></div>`
 
             const twono = `<div id="twono" class="grdTb2-a1">
           <div class="l1 lv2">If no, can your clinic support survivors to access Post-Exposure Prophylaxis for HIV elsewhere  through a safe referral?</div>
-          <div class="ans radioBtn" lables="Yes,No" name="q9" values="twono_y,twono_n"></div>
+          <div class="ans rd_twono" lables="Yes,No" name="q9" values="twono_y,twono_n"></div>
       </div>`
 
-            const twono_n = `<div id="twono-n" class="grdTb2-a2">
-          <div class="l1 lv3">If no, Why?</div>
-          <div class="ans radioBtn" lables="No one in the area provides this service,Other:" name="q10" values="twono_n1,twono_n2"></div>
-      </div>`
-            console.log('===>> ' + rbsctd);
+            const twono_n = `<div id="twono-n" class="grdTb2-a2"><div id="twono_n" class="l1 lv3">If no, Why?</div></div>`
+
             switch (rbsctd) {
                 // Q1
                 case 'oneyes':
@@ -8718,7 +8881,7 @@
                         $("#oneno").remove();
                         $("#oneno-n").remove();
                         $("#one").after(oneyes)
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'oneyes_y':
@@ -8727,33 +8890,45 @@
                         $("#oneyes").remove();
                         $("#oneno").remove();
                         $("#oneno-n").remove();
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'oneyes_n':
                     if (!$("#oneyes-n").length) {
                         $("#oneyes").after(oneyes_n)
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        var rd1 = '<div class="ansa rd_oneyes_n" lables="National policy does not allow" name="q3" values="oneyes_n1"></div>'
+                        var rd2 = '<div class="ansb rd_oneyes_n" lables="No stock available" name="q3" values="oneoneyes_n2"></div>'
+                        var rd3 = '<div class="ansc rd_oneyes_n" lables="No trained staff" name="q3" values="oneyes_n3"></div>'
+                        var rd4 = '<div class="ansd rd_oneyes_n" lables="Other" name="q3" values="oneyes_n4"></div>'
+                        $("#oneyes_n").after(rd1)
+                        $("#oneyes_n").after(rd2)
+                        $("#oneyes_n").after(rd3)
+                        $("#oneyes_n").after(rd4)
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'oneno':
-                    console.log('Radio button seleccionado: ' + rbsctd);
+                    me.renderRadioBtnTags();
                     if (!$("#oneno").length) {
                         $("#oneyes").remove();
                         $("#oneyes-n").remove();
                         $("#one").after(oneno)
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'onenoyes':
                     if ($("#oneno-n").length) {
                         $("#oneno-n").remove();
-                        console.log('Radio button seleccionado: ' + rbsctd);
                     }
                     break;
                 case 'onenono':
                     if (!$("#oneno-n").length) {
                         $("#oneno").after(oneno_n)
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        var rd1 = '<div class="ans1 rd_oneno_n" lables="No one in the area provides this service" name="q5" values="oneno_n1"></div>';
+                        var rd2 = '<div class="ans2 rd_oneno_n" lables="Other:" name="q5" values="oneno_n2"></div>';
+                        $("#oneno_n").after(rd1)
+                        $("#oneno_n").after(rd2)
+                        me.renderRadioBtnTags();
                     }
                     break;
                     // Q2
@@ -8764,7 +8939,7 @@
                         $("#twono").remove();
                         $("#twono-n").remove();
                         $("#two").after(twoyes)
-                        console.log('Radio button seleccionado: twoyes== ' + rbsctd);
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'twoyes_y':
@@ -8772,13 +8947,21 @@
                         $("#twoyes-n").remove();
                         $("#twono").remove();
                         $("#twono-n").remove();
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'twoyes_n':
                     if (!$("#twoyes-n").length) {
                         $("#twoyes").after(twoyes_n)
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        var rd1 = '<div class="ansa rd_twoyes_n" lables="National policy does not allow" name="q8" values="twoyes_n1"></div>';
+                        var rd2 = '<div class="ansb rd_twoyes_n" lables="No stock available" name="q8" values="twoyes_n2"></div>';
+                        var rd3 = '<div class="ansc rd_twoyes_n" lables="No trained staff" name="q8" values="twoyes_n3"></div>';
+                        var rd4 = '<div class="ansd rd_twoyes_n" lables="Other" name="q8" values="twoyes_n4"></div>';
+                        $("#twoyes_n").after(rd1)
+                        $("#twoyes_n").after(rd2)
+                        $("#twoyes_n").after(rd3)
+                        $("#twoyes_n").after(rd4)
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'twono':
@@ -8786,18 +8969,22 @@
                         $("#twoyes").remove();
                         $("#twoyes-n").remove();
                         $("#two").after(twono)
+                        me.renderRadioBtnTags();
                     }
                     break;
                 case 'twono_y':
                     if ($("#twono-n").length) {
                         $("#twono-n").remove();
-                        console.log('Radio button seleccionado: ' + rbsctd);
                     }
                     break;
                 case 'twono_n':
                     if (!$("#twono-n").length) {
                         $("#twono").after(twono_n)
-                        console.log('Radio button seleccionado: ' + rbsctd);
+                        var rd1 = '<div class="ans1 rd_twono_n" lables="No one in the area provides this service" name="q10" values="twono_n1"></div>'
+                        var rd2 = '<div class="ans2 rd_twono_n" lables="Other" name="q10" values="twono_n2"></div>'
+                        $("#twono_n").after(rd1)
+                        $("#twono_n").after(rd2)
+                        me.renderRadioBtnTags();
                     }
                     break;
             }
