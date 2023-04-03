@@ -2461,6 +2461,10 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
 
         input {
             width: 80%;
@@ -2488,6 +2492,10 @@
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
 
         input {
             width: 80%;
