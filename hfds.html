@@ -1,417 +1,473 @@
 <style type="text/css">
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
-.grdTb1-yn {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  grid-template-rows: 48px 48px;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  font-family: "Roboto", sans-serif;
-  width: 95%;
-  margin-bottom: 20px;
-  grid-template-areas: "t1 t1" "l1 ans";
-}
-.grdTb1-yn .t1 {
-  grid-area: t1;
-  color: #FFFFFF;
-  background-color: #00A6E2;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-yn .l1 {
-  grid-area: l1;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-yn .ans {
-  grid-area: ans;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  flex-direction: row;
-}
 
-.grdTb1-1 {
-  display: grid;
-  grid-template-columns: 1fr repeat(2, 120px);
-  grid-template-rows: repeat(6, 48px);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
-  width: 95%;
-  padding-bottom: 20px;
-  grid-template-areas: "title t1 t2" "l1 l1c2 l1c3" "l2 l2c2 l2c3" "l3 l3c2 l3c3" "l4 l4c2 l4c3" "l5 l5c2 l5c3";
-}
-.grdTb1-1 .title {
-  grid-area: title;
-  color: #FFFFFF;
-  background-color: #00A6E2;
-  border-left: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .t1 {
-  grid-area: t1;
-  color: #FFFFFF;
-  background-color: #00A6E2;
-  border-left: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-}
-.grdTb1-1 .t2 {
-  grid-area: t2;
-  color: #FFFFFF;
-  background-color: #00A6E2;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-}
-.grdTb1-1 .l1 {
-  grid-area: l1;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .l2 {
-  grid-area: l2;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .l3 {
-  grid-area: l3;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .l4 {
-  grid-area: l4;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .l5 {
-  grid-area: l5;
-  color: #151F6D;
-  background-color: rgba(156, 226, 242, 0.2117647059);
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-}
-.grdTb1-1 .l1c2 {
-  grid-area: l1c2;
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l1c2 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-  text-align: right;
-}
-.grdTb1-1 .l1c3 {
-  grid-area: l1c3;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l1c3 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l2c2 {
-  grid-area: l2c2;
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l2c2 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l2c3 {
-  grid-area: l2c3;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l2c3 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l3c2 {
-  grid-area: l3c2;
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l3c2 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l3c3 {
-  grid-area: l3c3;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l3c3 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l4c2 {
-  grid-area: l4c2;
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l4c2 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l4c3 {
-  grid-area: l4c3;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l4c3 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l5c2 {
-  grid-area: l5c2;
-  border-left: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l5c2 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
-.grdTb1-1 .l5c3 {
-  grid-area: l5c3;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-}
-.grdTb1-1 .l5c3 input {
-  width: 80%;
-  height: 80%;
-  border: none !important;
-  padding: 2px 8px;
-}
+  .grdTb1-yn {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 48px 48px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    font-family: "Roboto", sans-serif;
+    width: 95%;
+    margin-bottom: 20px;
+    grid-template-areas: "t1 t1" "l1 ans";
+  }
 
-.custom_tab {
-  border-top: none;
-  border-right: none;
-  border-bottom: 1px solid #7D7D7D;
-  border-left: none;
-  border-radius: 0;
-  background: transparent;
-  color: #323132;
-  font-weight: bold;
-}
-.custom_tab .ui-state-default {
-  border: 1px solid #7D7D7D;
-  background: rgba(181, 217, 179, 0.1725490196);
-  font-weight: bold;
-  color: #323132;
-}
-.custom_tab .ui-state-active {
-  border: 1px solid #7D7D7D;
-  background-color: #DAECDB;
-  font-weight: bold;
-  color: #323132;
-}
-.custom_tab a.ui-button:active {
-  border: 1px solid #7D7D7D;
-  background-color: #DAECDB;
-  font-weight: bold;
-  color: #323132;
-}
-.custom_tab .ui-state-active a,
-.custom_tab .ui-state-active a:link,
-.custom_tab .ui-state-active a:visited {
-  color: #323132 !important;
-}
-.custom_tab .ui-state-default a,
-.custom_tab .ui-state-default a:link,
-.custom_tab a.ui-button,
-.custom_tab a:link.ui-button,
-.custom_tab .ui-button {
-  color: #7D7D7D;
-}
+  .grdTb1-yn .t1 {
+    grid-area: t1;
+    color: #FFFFFF;
+    background-color: #00A6E2;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
 
-.content_tabs {
-  width: 98%;
-  min-height: 300px;
-  overflow-y: auto;
-}
-.content_tabs input[type=radio] {
-  margin: 10px 0 0 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  margin-right: 10px;
-  display: inline-block;
-  position: relative;
-  top: 3px;
-}
-.content_tabs input[type=radio]:checked {
-  background-color: #00A6E2;
-  border-color: #00A6E2;
-}
-.content_tabs label {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
+  .grdTb1-yn .l1 {
+    grid-area: l1;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
 
-i,
-rem {
-  color: rgb(138, 116, 116);
-  font-weight: 300;
-  font-size: 0.5em;
-}
+  .grdTb1-yn .ans {
+    grid-area: ans;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+  }
 
-.ui-widget-content {
-  border: none;
-}
+  .grdTb1-1 {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 120px);
+    grid-template-rows: repeat(6, 48px);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 95%;
+    padding-bottom: 20px;
+    grid-template-areas: "title t1 t2" "l1 l1c2 l1c3" "l2 l2c2 l2c3" "l3 l3c2 l3c3" "l4 l4c2 l4c3" "l5 l5c2 l5c3";
+  }
 
-.ui-widget.ui-widget-content {
-  border: none;
-}
+  .grdTb1-1 .title {
+    grid-area: title;
+    color: #FFFFFF;
+    background-color: #00A6E2;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
 
-/*# sourceMappingURL=main.css.map */
+  .grdTb1-1 .t1 {
+    grid-area: t1;
+    color: #FFFFFF;
+    background-color: #00A6E2;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
 
+  .grdTb1-1 .t2 {
+    grid-area: t2;
+    color: #FFFFFF;
+    background-color: #00A6E2;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l1 {
+    grid-area: l1;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l2 {
+    grid-area: l2;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l3 {
+    grid-area: l3;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l4 {
+    grid-area: l4;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l5 {
+    grid-area: l5;
+    color: #151F6D;
+    background-color: rgba(156, 226, 242, 0.2117647059);
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .grdTb1-1 .l1c2 {
+    grid-area: l1c2;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l1c2 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+    text-align: right;
+  }
+
+  .grdTb1-1 .l1c3 {
+    grid-area: l1c3;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l1c3 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l2c2 {
+    grid-area: l2c2;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l2c2 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l2c3 {
+    grid-area: l2c3;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l2c3 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l3c2 {
+    grid-area: l3c2;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l3c2 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l3c3 {
+    grid-area: l3c3;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l3c3 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l4c2 {
+    grid-area: l4c2;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l4c2 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l4c3 {
+    grid-area: l4c3;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l4c3 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l5c2 {
+    grid-area: l5c2;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l5c2 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .grdTb1-1 .l5c3 {
+    grid-area: l5c3;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .grdTb1-1 .l5c3 input {
+    width: 80%;
+    height: 80%;
+    border: none !important;
+    padding: 2px 8px;
+  }
+
+  .custom_tab {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #7D7D7D;
+    border-left: none;
+    border-radius: 0;
+    background: transparent;
+    color: #323132;
+    font-weight: bold;
+  }
+
+  .custom_tab .ui-state-default {
+    border: 1px solid #7D7D7D;
+    background: rgba(181, 217, 179, 0.1725490196);
+    font-weight: bold;
+    color: #323132;
+  }
+
+  .custom_tab .ui-state-active {
+    border: 1px solid #7D7D7D;
+    background-color: #DAECDB;
+    font-weight: bold;
+    color: #323132;
+  }
+
+  .custom_tab a.ui-button:active {
+    border: 1px solid #7D7D7D;
+    background-color: #DAECDB;
+    font-weight: bold;
+    color: #323132;
+  }
+
+  .custom_tab .ui-state-active a,
+  .custom_tab .ui-state-active a:link,
+  .custom_tab .ui-state-active a:visited {
+    color: #323132 !important;
+  }
+
+  .custom_tab .ui-state-default a,
+  .custom_tab .ui-state-default a:link,
+  .custom_tab a.ui-button,
+  .custom_tab a:link.ui-button,
+  .custom_tab .ui-button {
+    color: #7D7D7D;
+  }
+
+  .content_tabs {
+    width: 98%;
+    min-height: 300px;
+    overflow-y: auto;
+  }
+
+  .content_tabs input[type=radio] {
+    margin: 10px 0 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+
+  .content_tabs input[type=radio]:checked {
+    background-color: #00A6E2;
+    border-color: #00A6E2;
+  }
+
+  .content_tabs label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  i,
+  rem {
+    color: rgb(138, 116, 116);
+    font-weight: 300;
+    font-size: 0.5em;
+  }
+
+  .ui-widget-content {
+    border: none;
+  }
+
+  .ui-widget.ui-widget-content {
+    border: none;
+  }
 </style>
+<div id="CustomForm">
+  <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
 
-<div id="CustomForm_Content">
-  <div id="tabs" style="display:block;">
-    <ul class="custom_tab" id="mycustomtab">
-      <li><a catoption="xxx" href="#MISPLSSR" keyword="opt_c:tb1title">MISP Lead - SSR</a></li>
-      <li><a catoption="xxx" href="#SVPP" keyword="opt_c:tb2title">Sex. Violence Prev.</a></li>
-      <li><a catoption="xxx" href="#MNS" keyword="opt_c:tb3title">Mat. & New. Surv.</a></li>
-      <li><a catoption="xxx" href="#SRHP" keyword="opt_c:tb4title">SRH Plan.</a></li>
-      <li><a catoption="xxx" href="#PA" keyword="opt_c:tb5title">Pop. Accnt.</a></li>
-    </ul>
+  <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
+    <br />
+    <br />
+    <img src="../images/ajax-loader-circle.gif" /><br />
+    <br />
+    &nbsp;
+    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
+  </div>
+  
+  <div id="CustomForm_Content">
+    <div id="tabs" style="display:block;">
+      <ul class="custom_tab" id="mycustomtab">
+        <li><a catoption="xxx" href="#MISPLSSR" keyword="opt_c:tb1title">MISP Lead - SSR</a></li>
+        <li><a catoption="xxx" href="#SVPP" keyword="opt_c:tb2title">Sex. Violence Prev.</a></li>
+        <li><a catoption="xxx" href="#MNS" keyword="opt_c:tb3title">Mat. New. Surv.</a></li>
+        <li><a catoption="xxx" href="#SRHP" keyword="opt_c:tb4title">SRH Plan.</a></li>
+        <li><a catoption="xxx" href="#PA" keyword="opt_c:tb5title">Pop. Accnt.</a></li>
+      </ul>
 
-    <div catoption="xxx" class="content_tabs" id="MISPLSSR">
+      <div catoption="xxx" class="content_tabs" id="MISPLSSR">
 
-      <div class="grdTb1-yn">
-        <div class="t1" keyword="opt_c:key_xxx">Initiation of Response</div>
-        <div class="l1 lv0">Was this emergency response initiated within 72 hours?</div>
-        <div class="ans rdOne" lables="Yes,No" name="q1" values="yes,no"></div>
+        <div class="grdTb1-yn">
+          <div class="t1" keyword="opt_c:key_xxx">Initiation of Response</div>
+          <div class="l1 lv0">Was this emergency response initiated within 72 hours?</div>
+          <div class="ans rdOne" lables="Yes,No" name="q1" values="yes,no"></div>
+        </div>
+
+        <div class="grdTb1-yn">
+          <div class="t1" keyword="opt_c:key_xxx">Partnership</div>
+          <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on
+            marginalized communities?</div>
+          <div class="ans rdTwo" lables="Yes,No" name="q2" values="yes,no"></div>
+        </div>
+
+        <div class="grdTb1-1">
+          <div class="title" keyword="opt_c:key_xxx">Number of Cluster / Coordination Meetings Attended</div>
+          <div class="t1" keyword="opt_c:key_xxx">Sub-national Level</div>
+          <div class="t2" keyword="opt_c:key_xxx">National</div>
+
+          <div class="l1">Health Cluster / Coordination</div>
+          <div class="l1c2"><input /></div>
+          <div class="l1c3"><input /></div>
+
+          <div class="l2">SRH Sub-Cluster / Coordination</div>
+          <div class="l2c2"><input /></div>
+          <div class="l2c3"><input /></div>
+
+          <div class="l3">Protection Cluster / Coordination</div>
+          <div class="l3c2"><input /></div>
+          <div class="l3c3"><input /></div>
+
+          <div class="l4">SGBV Cluster / Coordination</div>
+          <div class="l4c2"><input /></div>
+          <div class="l4c3"><input /></div>
+
+          <div class="l5">Other Coordination Meeting</div>
+          <div class="l5c2"><input /></div>
+          <div class="l5c3"><input /></div>
+
+        </div>
+
       </div>
 
-      <div class="grdTb1-yn">
-        <div class="t1" keyword="opt_c:key_xxx">Partnership</div>
-        <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on
-          marginalized communities?</div>
-        <div class="ans rdTwo" lables="Yes,No" name="q2" values="yes,no"></div>
+      <div catoption="xxx" class="content_tabs" id="SVPP">
+        <h1>Sex. Violence Prev.</h1>
       </div>
 
-      <div class="grdTb1-1">
-        <div class="title" keyword="opt_c:key_xxx">Number of Cluster / Coordination Meetings Attended</div>
-        <div class="t1" keyword="opt_c:key_xxx">Sub-national Level</div>
-        <div class="t2" keyword="opt_c:key_xxx">National</div>
+      <div catoption="xxx" class="content_tabs" id="MNS">
+        <h1>Mat. & New. Surv.</h1>
+      </div>
 
-        <div class="l1">Health Cluster / Coordination</div>
-        <div class="l1c2"><input /></div>
-        <div class="l1c3"><input /></div>
+      <div catoption="xxx" class="content_tabs" id="SRHP">
+        <h1>SRH Plan.</h1>
+      </div>
 
-        <div class="l2">SRH Sub-Cluster / Coordination</div>
-        <div class="l2c2"><input /></div>
-        <div class="l2c3"><input /></div>
-
-        <div class="l3">Protection Cluster / Coordination</div>
-        <div class="l3c2"><input /></div>
-        <div class="l3c3"><input /></div>
-
-        <div class="l4">SGBV Cluster / Coordination</div>
-        <div class="l4c2"><input /></div>
-        <div class="l4c3"><input /></div>
-
-        <div class="l5">Other Coordination Meeting</div>
-        <div class="l5c2"><input /></div>
-        <div class="l5c3"><input /></div>
-
+      <div catoption="xxx" class="content_tabs" id="PA">
+        <h1>Pop. Accnt.</h1>
       </div>
 
     </div>
-
-    <div catoption="xxx" class="content_tabs" id="SVPP"></div>
-
-    <div catoption="xxx" class="content_tabs" id="MNS"></div>
-
-    <div catoption="xxx" class="content_tabs" id="SRHP"></div>
-
-    <div catoption="xxx" class="content_tabs" id="PA"></div>
-
   </div>
 </div>
-
 <script>
   $(document).ready(function () {
 
@@ -430,9 +486,7 @@ rem {
           $(this).attr('aria-selected', 'true');
           $(this).attr('aria-expanded', 'true');
           $('#MISPLSSR').attr('aria-hidden', 'false');
-          $('#MISPLSSR').css({
-            'display': 'block'
-          });
+          $('#MISPLSSR').css({ 'display': 'block' });
           break;
         case '#SVPP':
           $(this).attr('tabindex', '0');
@@ -442,9 +496,7 @@ rem {
           $(this).attr('aria-selected', 'true');
           $(this).attr('aria-expanded', 'true');
           $('#SVPP').attr('aria-hidden', 'false');
-          $('#SVPP').css({
-            'display': 'block'
-          });
+          $('#SVPP').css({ 'display': 'block' });
           break;
         case '#MNS':
           $(this).attr('tabindex', '0');
@@ -454,9 +506,7 @@ rem {
           $(this).attr('aria-selected', 'true');
           $(this).attr('aria-expanded', 'true');
           $('#MNS').attr('aria-hidden', 'false');
-          $('#MNS').css({
-            'display': 'block'
-          });
+          $('#MNS').css({ 'display': 'block' });
           break;
         case '#SRHP':
           $(this).attr('tabindex', '0');
@@ -466,9 +516,7 @@ rem {
           $(this).attr('aria-selected', 'true');
           $(this).attr('aria-expanded', 'true');
           $('#SRHP').attr('aria-hidden', 'false');
-          $('#SRHP').css({
-            'display': 'block'
-          });
+          $('#SRHP').css({ 'display': 'block' });
           break;
         case '#PA':
           $(this).attr('tabindex', '0');
@@ -478,9 +526,7 @@ rem {
           $(this).attr('aria-selected', 'true');
           $(this).attr('aria-expanded', 'true');
           $('#PA').attr('aria-hidden', 'false');
-          $('#PA').css({
-            'display': 'block'
-          });
+          $('#PA').css({ 'display': 'block' });
           break;
       }
     });
