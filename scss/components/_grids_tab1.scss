@@ -33,6 +33,7 @@
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
+        padding: 8px;
     }
 
     .ans {
@@ -137,6 +138,17 @@
 
     .l4 {
         grid-area: l4;
+        color: $clr_p;
+        background-color: $clr_ss;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .l5 {
+        grid-area: l5;
         color: $clr_p;
         background-color: $clr_ss;
         border-left: 1px solid $clr_brdr;

@@ -31,6 +31,7 @@
   border-bottom: 1px solid #e6e6e6;
   display: flex;
   align-items: center;
+  padding: 8px;
 }
 .grdTb1-yn .ans {
   grid-area: ans;
@@ -121,6 +122,16 @@
 }
 .grdTb1-1 .l4 {
   grid-area: l4;
+  color: #151F6D;
+  background-color: rgba(156, 226, 242, 0.2117647059);
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.grdTb1-1 .l5 {
+  grid-area: l5;
   color: #151F6D;
   background-color: rgba(156, 226, 242, 0.2117647059);
   border-left: 1px solid #e6e6e6;

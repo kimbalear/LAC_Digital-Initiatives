@@ -1,6 +1,5 @@
 <style type="text/css">
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
 .grdTb1-yn {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -33,6 +32,7 @@
   border-bottom: 1px solid #e6e6e6;
   display: flex;
   align-items: center;
+  padding: 8px;
 }
 .grdTb1-yn .ans {
   grid-area: ans;
@@ -123,6 +123,16 @@
 }
 .grdTb1-1 .l4 {
   grid-area: l4;
+  color: #151F6D;
+  background-color: rgba(156, 226, 242, 0.2117647059);
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.grdTb1-1 .l5 {
+  grid-area: l5;
   color: #151F6D;
   background-color: rgba(156, 226, 242, 0.2117647059);
   border-left: 1px solid #e6e6e6;
@@ -335,8 +345,8 @@ rem {
 
 /*# sourceMappingURL=main.css.map */
 
-
 </style>
+
 <div id="CustomForm_Content">
   <div id="tabs" style="display:block;">
     <ul class="custom_tab" id="mycustomtab">
@@ -352,13 +362,14 @@ rem {
       <div class="grdTb1-yn">
         <div class="t1" keyword="opt_c:key_xxx">Initiation of Response</div>
         <div class="l1 lv0">Was this emergency response initiated within 72 hours?</div>
-        <div class="ans" lables="Yes,No" name="q1" values="yes,no"></div>
+        <div class="ans rdOne" lables="Yes,No" name="q1" values="yes,no"></div>
       </div>
 
       <div class="grdTb1-yn">
         <div class="t1" keyword="opt_c:key_xxx">Partnership</div>
-        <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on marginalized communities?</div>
-        <div class="ans" lables="Yes,No" name="q2" values="yes,no"></div>
+        <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on
+          marginalized communities?</div>
+        <div class="ans rdTwo" lables="Yes,No" name="q2" values="yes,no"></div>
       </div>
 
       <div class="grdTb1-1">
@@ -384,13 +395,23 @@ rem {
 
         <div class="l5">Other Coordination Meeting</div>
         <div class="l5c2"><input /></div>
-        <div class="l6c3"><input /></div>
+        <div class="l5c3"><input /></div>
 
       </div>
 
     </div>
+
+    <div catoption="xxx" class="content_tabs" id="SVPP"></div>
+
+    <div catoption="xxx" class="content_tabs" id="MNS"></div>
+
+    <div catoption="xxx" class="content_tabs" id="SRHP"></div>
+
+    <div catoption="xxx" class="content_tabs" id="PA"></div>
+
   </div>
 </div>
+
 <script>
   $(document).ready(function () {
 
@@ -463,7 +484,6 @@ rem {
           break;
       }
     });
-
   });
 
   function RenderRadioBtnTags() {
@@ -514,7 +534,7 @@ rem {
       })
     }
 
-    me.rbselected = function (rbsctd) {}
+    me.rbselected = function (rbsctd) { }
     me.init();
   }
 
@@ -532,14 +552,14 @@ rem {
     }
 
     // ============================================================================================================
-    // GCACITranslation
+    // Translation
 
     function dsetTranslation(_exeFunc) {
       var me = this;
 
       me.exeFunc = _exeFunc;
 
-      me.optionSetTermId = "poTgmG2n7xT";
+      me.optionSetTermId = "xstM0mnnien";
 
       me.loadedDataSetElementList = false;
       me.loadedOptionSetList = false;

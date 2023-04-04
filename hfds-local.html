@@ -9,70 +9,67 @@
 
 </head>
 
-<div id="CustomForm">
-  <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
+<div id="CustomForm_Content">
+  <div id="tabs" style="display:block;">
+    <ul class="custom_tab" id="mycustomtab">
+      <li><a catoption="xxx" href="#MISPLSSR" keyword="opt_c:tb1title">MISP Lead - SSR</a></li>
+      <li><a catoption="xxx" href="#SVPP" keyword="opt_c:tb2title">Sex. Violence Prev.</a></li>
+      <li><a catoption="xxx" href="#MNS" keyword="opt_c:tb3title">Mat. & New. Surv.</a></li>
+      <li><a catoption="xxx" href="#SRHP" keyword="opt_c:tb4title">SRH Plan.</a></li>
+      <li><a catoption="xxx" href="#PA" keyword="opt_c:tb5title">Pop. Accnt.</a></li>
+    </ul>
 
-  <div class="loaderDiv" id="processFormLoadingDiv" style="display: none;"><br />
-    <br />
-    <br />
-    <img src="../images/ajax-loader-circle.gif" /><br />
-    <br />
-    &nbsp;
-    <p><span keyword="opt_c:cycleForm_loading_msg_SettingUpTheForm">Setting up the form</span>...</p>
-  </div>
+    <div catoption="xxx" class="content_tabs" id="MISPLSSR">
 
-  <div id="CustomForm_Content">
-    <div id="tabs" style="display:block;">
-      <ul class="custom_tab" id="mycustomtab">
-        <li><a catoption="xxx" href="#MISPLSSR" keyword="opt_c:tb1title">MISP Lead - SSR</a></li>
-        <li><a catoption="xxx" href="#SVPP" keyword="opt_c:tb2title">Sex. Violence Prev.</a></li>
-        <li><a catoption="xxx" href="#MNS" keyword="opt_c:tb3title">Mat. & New. Surv.</a></li>
-        <li><a catoption="xxx" href="#SRHP" keyword="opt_c:tb4title">SRH Plan.</a></li>
-        <li><a catoption="xxx" href="#PA" keyword="opt_c:tb5title">Pop. Accnt.</a></li>
-      </ul>
+      <div class="grdTb1-yn">
+        <div class="t1" keyword="opt_c:key_xxx">Initiation of Response</div>
+        <div class="l1 lv0">Was this emergency response initiated within 72 hours?</div>
+        <div class="ans rdOne" lables="Yes,No" name="q1" values="yes,no"></div>
+      </div>
 
-      <div catoption="xxx" class="content_tabs" id="MISPLSSR">
+      <div class="grdTb1-yn">
+        <div class="t1" keyword="opt_c:key_xxx">Partnership</div>
+        <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on
+          marginalized communities?</div>
+        <div class="ans rdTwo" lables="Yes,No" name="q2" values="yes,no"></div>
+      </div>
 
-        <div class="grdTb1-yn">
-          <div class="t1" keyword="opt_c:key_xxx">Initiation of Response</div>
-          <div class="l1 lv0">Was this emergency response initiated within 72 hours?</div>
-          <div class="ans" lables="Yes,No" name="q1" values="yes,no"></div>
-        </div>
+      <div class="grdTb1-1">
+        <div class="title" keyword="opt_c:key_xxx">Number of Cluster / Coordination Meetings Attended</div>
+        <div class="t1" keyword="opt_c:key_xxx">Sub-national Level</div>
+        <div class="t2" keyword="opt_c:key_xxx">National</div>
 
-        <div class="grdTb1-yn">
-          <div class="t1" keyword="opt_c:key_xxx">Partnership</div>
-          <div class="l1 lv0">Was this response designed and implemented in partnership with groups focused on marginalized communities?</div>
-          <div class="ans" lables="Yes,No" name="q2" values="yes,no"></div>
-        </div>
+        <div class="l1">Health Cluster / Coordination</div>
+        <div class="l1c2"><input /></div>
+        <div class="l1c3"><input /></div>
 
-        <div class="grdTb1-1">
-          <div class="title" keyword="opt_c:key_xxx">Number of Cluster / Coordination Meetings Attended</div>
-          <div class="t1" keyword="opt_c:key_xxx">Sub-national Level</div>
-          <div class="t2" keyword="opt_c:key_xxx">National</div>
+        <div class="l2">SRH Sub-Cluster / Coordination</div>
+        <div class="l2c2"><input /></div>
+        <div class="l2c3"><input /></div>
 
-          <div class="l1">Health Cluster / Coordination</div>
-          <div class="l1c2"><input /></div>
-          <div class="l1c3"><input /></div>
+        <div class="l3">Protection Cluster / Coordination</div>
+        <div class="l3c2"><input /></div>
+        <div class="l3c3"><input /></div>
 
-          <div class="l2">SRH Sub-Cluster / Coordination</div>
-          <div class="l2c2"><input /></div>
-          <div class="l2c3"><input /></div>
+        <div class="l4">SGBV Cluster / Coordination</div>
+        <div class="l4c2"><input /></div>
+        <div class="l4c3"><input /></div>
 
-          <div class="l3">Protection Cluster / Coordination</div>
-          <div class="l3c2"><input /></div>
-          <div class="l3c3"><input /></div>
-
-          <div class="l4">SGBV Cluster / Coordination</div>
-          <div class="l4c2"><input /></div>
-          <div class="l4c3"><input /></div>
-
-          <div class="l5">Other Coordination Meeting</div>
-          <div class="l5c2"><input /></div>
-          <div class="l6c3"><input /></div>
-
-        </div>
+        <div class="l5">Other Coordination Meeting</div>
+        <div class="l5c2"><input /></div>
+        <div class="l5c3"><input /></div>
 
       </div>
+
     </div>
+
+    <div catoption="xxx" class="content_tabs" id="SVPP"></div>
+
+    <div catoption="xxx" class="content_tabs" id="MNS"></div>
+
+    <div catoption="xxx" class="content_tabs" id="SRHP"></div>
+
+    <div catoption="xxx" class="content_tabs" id="PA"></div>
+
   </div>
 </div>
