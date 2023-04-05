@@ -1,176 +1,22 @@
-// Tab4
-
 .grdTb4-1 {
     display: grid;
-    grid-template-columns: 1fr 120px;
-    grid-template-rows: 48px 48px;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr repeat(3, 120px);
+    grid-template-rows: repeat(8, 48px);
     gap: 0px 0px;
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     width: 95%;
+    padding-bottom: 20px;
     grid-template-areas:
-        "t1 t2"
-        "l1 l1_1";
-
-    .t1 {
-        grid-area: t1;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .t2 {
-        grid-area: t2;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .l1 {
-        grid-area: l1;
-        color: $clr_p;
-        background-color: $clr_ss;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .l1_1 {
-        grid-area: l1_1;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-}
-
-.grdTb4-2 {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 120px);
-    grid-template-rows: 48px 48px;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    width: 95%;
-    grid-template-areas:
-        "t1 t2 t3"
-        "l1 l1_1 l1_2";
-
-    .t1 {
-        grid-area: t1;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .t2 {
-        grid-area: t2;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .t3 {
-        grid-area: t3;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .l1 {
-        grid-area: l1;
-        color: $clr_p;
-        background-color: $clr_ss;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .l1_1 {
-        grid-area: l1_1;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l1_2 {
-        grid-area: l1_2;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        color: $clr_p;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 13px;
-    }
-}
-
-.grdTb4-3 {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, 120px);
-    grid-template-rows: repeat(5, 48px);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    width: 95%;
-    grid-template-areas:
-        "title t1 t2 t3 tt"
-        "l1 l1c2 l1c3 l1c4 l1tt"
-        "l2 l2c2 l2c3 l2c4 l2tt"
-        "l3 l3c2 l3c3 l3c4 l3tt"
-        "l4 l4c2 l4c3 l4c4 l4tt";
+        "title t1 t2 t3"
+        "l1 l1c2 l1c3 l1c4"
+        "l2 l2c2 l2c3 l2c4"
+        "l3 l3c2 l3c3 l3c4"
+        "l4 l4c2 l4c3 l4c4"
+        "l5 l5c2 l5c3 l5c4"
+        "l6 l6c2 l6c3 l6c4"
+        "l7 l7c2 l7c3 l7c4";
 
     .title {
         grid-area: title;
@@ -215,21 +61,8 @@
         color: $clr_ps;
         background-color: $clr_s;
         border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .tt {
-        grid-area: tt;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
+        border-top: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
         align-items: center;
@@ -281,6 +114,39 @@
         padding: 8px;
     }
 
+    .l5 {
+        grid-area: l5;
+        color: $clr_p;
+        background-color: $clr_ss;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .l6 {
+        grid-area: l6;
+        color: $clr_p;
+        background-color: $clr_ss;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .l7 {
+        grid-area: l7;
+        color: $clr_p;
+        background-color: $clr_ss;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
     .l1c2 {
         grid-area: l1c2;
         border-left: 1px solid $clr_brdr;
@@ -310,19 +176,6 @@
 
     .l1c4 {
         grid-area: l1c4;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
-    }
-
-    .l1tt {
-        grid-area: l1tt;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
@@ -364,19 +217,6 @@
     .l2c4 {
         grid-area: l2c4;
         border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
-    }
-
-    .l2tt {
-        grid-area: l2tt;
-        border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
@@ -416,19 +256,6 @@
 
     .l3c4 {
         grid-area: l3c4;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-        }
-    }
-
-    .l3tt {
-        grid-area: l3tt;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
@@ -470,6 +297,7 @@
     .l4c4 {
         grid-area: l4c4;
         border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
         input {
@@ -480,8 +308,114 @@
         }
     }
 
-    .l4tt {
-        grid-area: l4tt;
+    .l5c2 {
+        grid-area: l5c2;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l5c3 {
+        grid-area: l5c3;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l5c4 {
+        grid-area: l5c4;
+        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l6c2 {
+        grid-area: l6c2;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l6c3 {
+        grid-area: l6c3;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l6c4 {
+        grid-area: l6c4;
+        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l7c2 {
+        grid-area: l7c2;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l7c3 {
+        grid-area: l7c3;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+        }
+    }
+
+    .l7c4 {
+        grid-area: l7c4;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
@@ -495,67 +429,38 @@
     }
 }
 
-.grdTb4-4 {
+.grdTb4-2 {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 120px);
-    grid-template-rows: repeat(6, 48px);
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 120px;
+    grid-template-rows: repeat(2, 48px);
     gap: 0px 0px;
     grid-auto-flow: row;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     width: 95%;
+    padding-bottom: 20px;
     grid-template-areas:
-        "t1 t2 t3 tt"
-        "l1 l1_1 l1_2 l1_tt"
-        "l2 l2_1 l2_2 l2_tt"
-        "l3 l3_1 l3_2 l3_tt"
-        "l4 l4_1 l4_2 l4_tt"
-        "l5 l5_1 l5_2 l5_tt";
+        "title t1"
+        "l1 l1c2";
+
+    .title {
+        grid-area: title;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-left: 1px solid $clr_brdr;
+        border-top: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
 
     .t1 {
         grid-area: t1;
         color: $clr_ps;
         background-color: $clr_s;
         border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .t2 {
-        grid-area: t2;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .t3 {
-        grid-area: t3;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
-        border-top: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px;
-    }
-
-    .tt {
-        grid-area: tt;
-        color: $clr_ps;
-        background-color: $clr_s;
-        border-left: 1px solid $clr_brdr;
+        border-right: 1px solid $clr_brdr;
         border-top: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
@@ -575,8 +480,8 @@
         padding: 8px;
     }
 
-    .l1_1 {
-        grid-area: l1_1;
+    .l1c2 {
+        grid-area: l1c2;
         border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
 
@@ -588,38 +493,37 @@
             text-align: right;
         }
     }
+}
 
-    .l1_2 {
-        grid-area: l1_2;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
+.grdTb4-yn {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 48px 48px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    font-family: 'Roboto', sans-serif;
+    width: 95%;
+    margin-bottom: 20px;
+    grid-template-areas:
+        "t1 t1"
+        "l1 ans";
 
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l1_tt {
-        grid-area: l1_tt;
+    .t1 {
+        grid-area: t1;
+        color: $clr_ps;
+        background-color: $clr_s;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
+        border-top: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        display: flex;
+        align-items: center;
+        padding: 8px;
     }
 
-    .l2 {
-        grid-area: l2;
+    .l1 {
+        grid-area: l1;
         color: $clr_p;
         background-color: $clr_ss;
         border-left: 1px solid $clr_brdr;
@@ -629,208 +533,12 @@
         padding: 8px;
     }
 
-    .l2_1 {
-        grid-area: l2_1;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l2_2 {
-        grid-area: l2_2;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l2_tt {
-        grid-area: l2_tt;
+    .ans {
+        grid-area: ans;
         border-left: 1px solid $clr_brdr;
         border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l3 {
-        grid-area: l3;
-        color: $clr_p;
-        background-color: $clr_ss;
-        border-left: 1px solid $clr_brdr;
         border-bottom: 1px solid $clr_brdr;
         display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .l3_1 {
-        grid-area: l3_1;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l3_2 {
-        grid-area: l3_2;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l3_tt {
-        grid-area: l3_tt;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l4 {
-        grid-area: l4;
-        color: $clr_p;
-        background-color: $clr_ss;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .l4_1 {
-        grid-area: l4_1;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l4_2 {
-        grid-area: l4_2;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l4_tt {
-        grid-area: l4_tt;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l5 {
-        grid-area: l5;
-        color: $clr_p;
-        background-color: $clr_ss;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-    }
-
-    .l5_1 {
-        grid-area: l5_1;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l5_2 {
-        grid-area: l5_2;
-        border-left: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
-    }
-
-    .l5_tt {
-        grid-area: l5_tt;
-        border-left: 1px solid $clr_brdr;
-        border-right: 1px solid $clr_brdr;
-        border-bottom: 1px solid $clr_brdr;
-
-        input {
-            width: 80%;
-            height: 80%;
-            border: none !important;
-            padding: 2px 8px;
-            text-align: right;
-        }
+        flex-direction: row;
     }
 }
