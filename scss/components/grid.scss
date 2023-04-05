@@ -1,0 +1,399 @@
+.cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr auto;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    height: 100%;
+    grid-template-areas:
+        "header header header"
+        "cnt_1 cnt_2 cnt_3"
+        "sec_cupon sec_ngos sec_date";
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 8px 8px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "sec_title sec_cui";
+        grid-area: header;
+
+        .sec_title {
+            padding-bottom: 20px;
+            grid-area: sec_title;
+
+            .gr_title {
+                width: max-content;
+                height: max-content;
+                padding: 8px;
+                margin: 0 auto;
+
+                .title {
+                    font-size: 4em;
+                    font-weight: 900;
+                    color: $clr2;
+                    text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
+                }
+
+                .subtitle {
+                    float: right;
+                    width: max-content;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    color: $clr2;
+                    padding: 4px 12px;
+                    background-color: $clr5;
+                    border-radius: 16px;
+                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        .sec_cui {
+            align-self: center;
+            grid-area: sec_cui;
+
+            .gr_cui {
+                width: 90%;
+                height: max-content;
+                padding: 8px;
+                margin: 0 auto;
+
+                .title {
+                    font-size: 1.7em;
+                    font-weight: 600;
+                    color: $clr1;
+                    padding-left: 20px;
+                }
+
+                .cont_input {
+                    width: 100%;
+                    height: 48px;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: $clr2;
+                    padding: 4px 12px;
+                    background-color: $clr2;
+                    border-radius: 24px;
+                }
+            }
+        }
+    }
+
+    .cnt_1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        background-color: $clr6;
+        grid-template-areas:
+            "cnt1_hd"
+            "cnt1_1";
+        grid-area: cnt_1;
+
+        .cnt1_hd {
+            grid-area: cnt1_hd;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: auto 52px;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                background-color: $clr2;
+                border-radius: 50px;
+                width: 100%;
+                padding-left: 18px;
+                margin: 0 auto;
+                box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                grid-template-areas:
+                    "lbl cta";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .cnt1_1 {
+            grid-area: cnt1_1;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: 52px auto ;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                width: 100%;
+                padding-right: 18px;
+                margin: 0 auto;
+                grid-template-areas:
+                    "cta lbl ";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                    background-color: $clr2;
+                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    border-radius: 50px;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                    //color: $clr2;
+                }
+            }
+        }
+    }
+
+    .cnt_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        background-color: $clr6;
+        border-left: 4px dotted $clr2;
+        border-right: 4px dotted $clr2;
+        grid-template-areas:
+            "cnt2_hd"
+            "cnt2_1";
+        grid-area: cnt_2;
+
+        .cnt2_hd {
+            grid-area: cnt2_hd;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: auto 52px;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                background-color: $clr2;
+                border-radius: 50px;
+                width: 100%;
+                padding-left: 18px;
+                margin: 0 auto;
+                box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                grid-template-areas:
+                    "lbl cta";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .cnt2_1 {
+            grid-area: cnt2_1;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: 52px auto ;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                width: 100%;
+                padding-right: 18px;
+                margin: 0 auto;
+                grid-template-areas:
+                    "cta lbl ";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                    background-color: $clr2;
+                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    border-radius: 50px;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                    //color: $clr2;
+                }
+            }
+        }
+    }
+
+    .cnt_3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        background-color: $clr6;
+        grid-template-areas:
+            "cnt3_hd"
+            "cnt3_1";
+        grid-area: cnt_3;
+
+        .cnt3_hd {
+            grid-area: cnt3_hd;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: auto 52px;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                background-color: $clr2;
+                border-radius: 50px;
+                width: 100%;
+                padding-left: 18px;
+                margin: 0 auto;
+                box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                grid-template-areas:
+                    "lbl cta";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .cnt3_1 {
+            grid-area: cnt3_1;
+            padding: 16px;
+
+            .cont_check {
+                display: grid;
+                grid-template-columns: 52px auto ;
+                grid-template-rows: 52px;
+                gap: 0px 8px;
+                width: 100%;
+                padding-right: 18px;
+                margin: 0 auto;
+                grid-template-areas:
+                    "cta lbl ";
+
+                .cta {
+                    justify-self: center;
+                    align-self: center;
+                    grid-area: cta;
+                    background-color: $clr2;
+                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    border-radius: 50px;
+                }
+
+                .lbl {
+                    justify-self: start;
+                    align-self: center;
+                    grid-area: lbl;
+                    font-size: 1.5em;
+                    //color: $clr2;
+                }
+            }
+        }
+    }
+
+    .sec_cupon {
+        justify-self: stretch;
+        align-self: center;
+        grid-area: sec_cupon;
+
+        .gr_cupon {
+            width: 90%;
+            height: max-content;
+            padding: 8px;
+            margin: 0 auto;
+
+            .title {
+                font-size: 1em;
+                line-height: 2;
+                font-weight: 500;
+                color: $clr1;
+                padding-left: 20px;
+            }
+
+            .cont_input {
+                width: 100%;
+                height: 48px;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $clr2;
+                padding: 4px 12px;
+                background-color: $clr2;
+                border-radius: 24px;
+            }
+        }
+    }
+
+    .sec_ngos {
+        align-self: center;
+        grid-area: sec_ngos;
+    }
+
+    .sec_date {
+        align-self: center;
+        grid-area: sec_date;
+
+        .gr_date {
+            width: 90%;
+            height: max-content;
+            padding: 8px;
+            margin: 0 auto;
+
+            .title {
+                font-size: 1em;
+                line-height: 2;
+                font-weight: 500;
+                color: $clr1;
+                padding-left: 20px;
+            }
+
+            .cont_input {
+                width: 100%;
+                height: 48px;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $clr2;
+                padding: 4px 12px;
+                background-color: $clr2;
+                border-radius: 24px;
+            }
+        }
+    }
+}
