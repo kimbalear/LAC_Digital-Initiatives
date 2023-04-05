@@ -78,6 +78,18 @@ body {
   background-color: #FFFFFF;
   border-radius: 24px;
 }
+.cnt .header .sec_cui .gr_cui .cont_input input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.2em;
+}
+.cnt .header .sec_cui .gr_cui .cont_input input[type=text]:focus {
+  outline: none;
+}
+.cnt .header .sec_cui .gr_cui .cont_input:focus-within {
+  border: 4px solid #FF8607;
+}
 .cnt .cnt_1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -307,6 +319,18 @@ body {
   background-color: #FFFFFF;
   border-radius: 24px;
 }
+.cnt .sec_cupon .gr_cupon .cont_input input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.2em;
+}
+.cnt .sec_cupon .gr_cupon .cont_input input[type=text]:focus {
+  outline: none;
+}
+.cnt .sec_cupon .gr_cupon .cont_input:focus-within {
+  border: 4px solid #FF8607;
+}
 .cnt .sec_ngos {
   align-self: center;
   grid-area: sec_ngos;
@@ -338,6 +362,18 @@ body {
   padding: 4px 12px;
   background-color: #FFFFFF;
   border-radius: 24px;
+}
+.cnt .sec_date .gr_date .cont_input input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.2em;
+}
+.cnt .sec_date .gr_date .cont_input input[type=text]:focus {
+  outline: none;
+}
+.cnt .sec_date .gr_date .cont_input:focus-within {
+  border: 4px solid #FF8607;
 }
 
 .checkbox-wrapper-26 * {

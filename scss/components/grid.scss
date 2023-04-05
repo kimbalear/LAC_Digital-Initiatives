@@ -80,6 +80,21 @@
                     padding: 4px 12px;
                     background-color: $clr2;
                     border-radius: 24px;
+
+                    input[type="text"] {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        font-size: 1.2em;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    &:focus-within {
+                        border: 4px solid $clr5;
+                    }
                 }
             }
         }
@@ -136,7 +151,7 @@
 
             .cont_check {
                 display: grid;
-                grid-template-columns: 52px auto ;
+                grid-template-columns: 52px auto;
                 grid-template-rows: 52px;
                 gap: 0px 8px;
                 width: 100%;
@@ -218,7 +233,7 @@
 
             .cont_check {
                 display: grid;
-                grid-template-columns: 52px auto ;
+                grid-template-columns: 52px auto;
                 grid-template-rows: 52px;
                 gap: 0px 8px;
                 width: 100%;
@@ -298,7 +313,7 @@
 
             .cont_check {
                 display: grid;
-                grid-template-columns: 52px auto ;
+                grid-template-columns: 52px auto;
                 grid-template-rows: 52px;
                 gap: 0px 8px;
                 width: 100%;
@@ -356,6 +371,21 @@
                 padding: 4px 12px;
                 background-color: $clr2;
                 border-radius: 24px;
+
+                input[type="text"] {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    font-size: 1.2em;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &:focus-within {
+                    border: 4px solid $clr5;
+                }
             }
         }
     }
@@ -393,6 +423,21 @@
                 padding: 4px 12px;
                 background-color: $clr2;
                 border-radius: 24px;
+
+                input[type="text"] {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    font-size: 1.2em;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &:focus-within {
+                    border: 4px solid $clr5;
+                }
             }
         }
     }
