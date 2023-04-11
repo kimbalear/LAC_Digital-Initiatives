@@ -1,0 +1,12 @@
+$small: 300px;
+$medium: 900px;
+
+.smth {
+  //some CSS
+  @media screen and (max-width: $small) {
+    //do Smth
+  }
+  @media screen and (min-width: $medium) {
+    //do Smth
+  }
+}

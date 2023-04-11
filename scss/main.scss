@@ -1,5 +1,6 @@
   @import 'abstracts/_var.scss',
-  'abstracts/_typography.scss';
+  'abstracts/_typography.scss',
+  'abstracts/media.scss';
 
   @import 'components/grid.scss',
   'components/radio_check.scss',
@@ -25,8 +26,29 @@
 
     .wrapper {
       width: 100%;
-      height: 100%;
+      height: calc(100% - 50px);
+      max-width: 800px;
+      margin: 0 auto;
       border: 4px solid $clr2;
       padding: 16px;
+    }
+
+    @media screen and (max-width: 711px) {
+      .wrapper {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 711px) {
+    html,
+    body {
+      width: 100%;
+      height: auto;
+      overflow: auto;
     }
   }
