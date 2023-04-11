@@ -4,23 +4,43 @@ body {
   font-size: 1em;
 }
 
-.cnt {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 130px 1fr auto;
-  gap: 8px 0px;
-  grid-auto-flow: row;
-  height: calc(100% - 20px);
-  grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
+@media only screen and (min-width: 320px) {
+  .cnt {
+    width: 100%;
+    display: inline-block;
+    height: max-content;
+    border: 4px solid #FFFFFF;
+    padding: 16px;
+  }
 }
-.cnt .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 8px 8px;
-  grid-auto-flow: row;
-  grid-template-areas: "sec_title sec_cui";
-  grid-area: header;
+@media only screen and (min-width: 711px) {
+  .cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr auto;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    height: calc(100% - 20px);
+    grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
+  }
+}
+@media only screen and (min-width: 320px) {
+  .cnt .header {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas: "sec_title sec_cui";
+    grid-area: header;
+  }
 }
 .cnt .header .sec_title {
   padding-bottom: 20px;
@@ -90,15 +110,25 @@ body {
 .cnt .header .sec_cui .gr_cui .cont_input:focus-within {
   border: 4px solid #FF8607;
 }
-.cnt .cnt_1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  background-color: #00B3D4;
-  grid-template-areas: "cnt1_hd" "cnt1_1";
-  grid-area: cnt_1;
+@media only screen and (min-width: 320px) {
+  .cnt .cnt_1 {
+    border: none;
+    border-top: 4px dotted #FFFFFF;
+    border-bottom: 4px dotted #FFFFFF;
+    background-color: #00B3D4;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .cnt_1 {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "cnt1_hd" "cnt1_1";
+    grid-area: cnt_1;
+  }
 }
 .cnt .cnt_1 .cnt1_hd {
   grid-area: cnt1_hd;
@@ -127,12 +157,6 @@ body {
   align-self: center;
   grid-area: lbl;
   font-size: 1.5em;
-}
-@media screen and (max-width: 783px) {
-  .cnt .cnt_1 .cnt1_hd .cont_check .lbl {
-    font-size: 1.2em;
-    font-weight: 400;
-  }
 }
 .cnt .cnt_1 .cnt1_1 {
   grid-area: cnt1_1;
@@ -168,17 +192,25 @@ body {
     font-weight: 400;
   }
 }
-.cnt .cnt_2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  background-color: #00B3D4;
-  border-left: 4px dotted #FFFFFF;
-  border-right: 4px dotted #FFFFFF;
-  grid-template-areas: "cnt2_hd" "cnt2_1";
-  grid-area: cnt_2;
+@media only screen and (min-width: 320px) {
+  .cnt .cnt_2 {
+    border: none;
+    background-color: #00B3D4;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .cnt_2 {
+    border: none;
+    border-left: 4px dotted #FFFFFF;
+    border-right: 4px dotted #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "cnt2_hd" "cnt2_1";
+    grid-area: cnt_2;
+  }
 }
 .cnt .cnt_2 .cnt2_hd {
   grid-area: cnt2_hd;
@@ -207,12 +239,6 @@ body {
   align-self: center;
   grid-area: lbl;
   font-size: 1.5em;
-}
-@media screen and (max-width: 783px) {
-  .cnt .cnt_2 .cnt2_hd .cont_check .lbl {
-    font-size: 1.2em;
-    font-weight: 400;
-  }
 }
 .cnt .cnt_2 .cnt2_1 {
   grid-area: cnt2_1;
@@ -248,15 +274,25 @@ body {
     font-weight: 400;
   }
 }
-.cnt .cnt_3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  background-color: #00B3D4;
-  grid-template-areas: "cnt3_hd" "cnt3_1";
-  grid-area: cnt_3;
+@media only screen and (min-width: 320px) {
+  .cnt .cnt_3 {
+    border: none;
+    border-top: 4px dotted #FFFFFF;
+    border-bottom: 4px dotted #FFFFFF;
+    background-color: #00B3D4;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .cnt_3 {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "cnt3_hd" "cnt3_1";
+    grid-area: cnt_3;
+  }
 }
 .cnt .cnt_3 .cnt3_hd {
   grid-area: cnt3_hd;
@@ -285,12 +321,6 @@ body {
   align-self: center;
   grid-area: lbl;
   font-size: 1.5em;
-}
-@media screen and (max-width: 783px) {
-  .cnt .cnt_3 .cnt3_hd .cont_check .lbl {
-    font-size: 1.2em;
-    font-weight: 400;
-  }
 }
 .cnt .cnt_3 .cnt3_1 {
   grid-area: cnt3_1;
@@ -326,10 +356,17 @@ body {
     font-weight: 400;
   }
 }
-.cnt .sec_cupon {
-  justify-self: stretch;
-  align-self: center;
-  grid-area: sec_cupon;
+@media only screen and (min-width: 320px) {
+  .cnt .sec_cupon {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .sec_cupon {
+    padding-top: 0px;
+    justify-self: stretch;
+    grid-area: sec_cupon;
+  }
 }
 .cnt .sec_cupon .gr_cupon {
   width: 90%;
@@ -338,17 +375,11 @@ body {
   margin: 0 auto;
 }
 .cnt .sec_cupon .gr_cupon .title {
-  font-size: 1em;
   line-height: 2;
-  font-weight: 500;
   color: #000000;
   padding-left: 20px;
-}
-@media screen and (max-width: 783px) {
-  .cnt .sec_cupon .gr_cupon .title {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
+  font-size: 1em;
+  font-weight: 400;
 }
 .cnt .sec_cupon .gr_cupon .cont_input {
   width: 100%;
@@ -377,9 +408,17 @@ body {
   align-self: center;
   grid-area: sec_ngos;
 }
-.cnt .sec_date {
-  align-self: center;
-  grid-area: sec_date;
+@media only screen and (min-width: 320px) {
+  .cnt .sec_date {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .cnt .sec_date {
+    padding-top: 0px;
+    justify-self: stretch;
+    grid-area: sec_date;
+  }
 }
 .cnt .sec_date .gr_date {
   width: 90%;
@@ -388,17 +427,11 @@ body {
   margin: 0 auto;
 }
 .cnt .sec_date .gr_date .title {
-  font-size: 1em;
   line-height: 2;
-  font-weight: 500;
   color: #000000;
   padding-left: 20px;
-}
-@media screen and (max-width: 783px) {
-  .cnt .sec_date .gr_date .title {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
+  font-size: 1em;
+  font-weight: 400;
 }
 .cnt .sec_date .gr_date .cont_input {
   width: 100%;
@@ -424,106 +457,6 @@ body {
   border: 4px solid #FF8607;
 }
 
-@media screen and (max-width: 340px) {
-  .cnt {
-    width: 100%;
-  }
-  .cnt .sec_cupon, .cnt .sec_date {
-    padding-top: 20px;
-  }
-  .cnt .sec_cupon .gr_cupon .title, .cnt .sec_cupon .gr_date .title, .cnt .sec_date .gr_cupon .title, .cnt .sec_date .gr_date .title {
-    font-size: 0.5em !important;
-  }
-}
-@media screen and (max-width: 589px) {
-  .cnt {
-    width: 100%;
-  }
-  .cnt .header {
-    display: inline-block;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-@media screen and (max-width: 711px) {
-  .cnt {
-    display: inline-block;
-    height: max-content;
-    border: 4px solid #FFFFFF;
-    padding: 16px;
-  }
-  .cnt .cnt_1 {
-    border: none;
-    border-top: 4px dotted #FFFFFF;
-    border-bottom: 4px dotted #FFFFFF;
-  }
-  .cnt .cnt_2 {
-    border: none;
-    border-bottom: 4px dotted #FFFFFF;
-  }
-  .cnt .cnt_3 {
-    border: none;
-    border-bottom: 4px dotted #FFFFFF;
-  }
-  .cnt .sec_cupon, .cnt .sec_date {
-    padding-top: 20px;
-  }
-  .cnt .sec_cupon .gr_cupon .title, .cnt .sec_cupon .gr_date .title, .cnt .sec_date .gr_cupon .title, .cnt .sec_date .gr_date .title {
-    font-size: 1.1em !important;
-  }
-  .cnt .sec_ngos {
-    align-self: center;
-    grid-area: sec_ngos;
-  }
-  .cnt .sec_date {
-    align-self: center;
-    grid-area: sec_date;
-  }
-  .cnt .sec_date .gr_date {
-    width: 90%;
-    height: max-content;
-    padding: 8px;
-    margin: 0 auto;
-  }
-  .cnt .sec_date .gr_date .title {
-    font-size: 1em;
-    line-height: 2;
-    font-weight: 500;
-    color: #000000;
-    padding-left: 20px;
-  }
-}
-@media screen and (max-width: 711px) and (max-width: 783px) {
-  .cnt .sec_date .gr_date .title {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
-}
-@media screen and (max-width: 711px) {
-  .cnt .sec_date .gr_date .cont_input {
-    width: 100%;
-    height: 48px;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 4px 12px;
-    background-color: #FFFFFF;
-    border-radius: 24px;
-  }
-  .cnt .sec_date .gr_date .cont_input input[type=text] {
-    width: 100%;
-    height: 100%;
-    border: none;
-    font-size: 1.2em;
-  }
-  .cnt .sec_date .gr_date .cont_input input[type=text]:focus {
-    outline: none;
-  }
-  .cnt .sec_date .gr_date .cont_input:focus-within {
-    border: 4px solid #FF8607;
-  }
-}
 .checkbox-wrapper-26 * {
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -697,11 +630,21 @@ body {
   box-sizing: border-box;
 }
 
-html,
+@media only screen and (min-width: 320px) {
+  html,
 body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+}
+@media only screen and (min-width: 711px) {
+  html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 body {
@@ -709,15 +652,7 @@ body {
   padding: 16px;
   margin: 0;
 }
-body .wrapper {
-  width: 100%;
-  height: calc(100% - 50px);
-  max-width: 800px;
-  margin: 0 auto;
-  border: 4px solid #FFFFFF;
-  padding: 16px;
-}
-@media screen and (max-width: 711px) {
+@media only screen and (min-width: 320px) {
   body .wrapper {
     width: 100%;
     height: auto;
@@ -726,13 +661,13 @@ body .wrapper {
     padding: 0;
   }
 }
-
-@media screen and (max-width: 711px) {
-  html,
-body {
+@media only screen and (min-width: 711px) {
+  body .wrapper {
     width: 100%;
-    height: auto;
-    overflow: auto;
+    height: calc(100% - 50px);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
   }
 }
 
