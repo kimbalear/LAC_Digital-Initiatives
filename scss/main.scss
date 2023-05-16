@@ -29,11 +29,12 @@
   }
 
   body {
-    background-color: $clr3;
+    background-color: $clr2;
     padding: 16px;
-    margin: 0;
+    margin: 8%  0 0;
 
     .wrapper {
+      position: relative;
 
       @include brk320 {
         width: 100%;
@@ -45,8 +46,8 @@
 
       @include brk711 {
         width: 100%;
-        height: calc(100% - 50px);
-        max-width: 800px;
+        height: auto;
+        max-width: 1280px;
         margin: 0 auto;
         padding: 16px;
       }
