@@ -18,10 +18,10 @@
         @include brk711 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto 222px auto;
+            grid-template-rows: auto 222px 80px;
             gap: 0px 0px;
             grid-auto-flow: row;
-            height: 493px;
+            height: 480px;
             grid-template-areas:
                 "header header header"
                 "cnt_1 cnt_2 cnt_3"
@@ -104,7 +104,7 @@
 
                     .cont_input {
                         width: 100%;
-                        height: 48px;
+                        height: 36px;
                         font-size: 1.2em;
                         font-weight: 500;
                         text-transform: uppercase;
@@ -160,8 +160,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 52px;
-                    grid-template-rows: 48px;
+                    grid-template-columns: auto 36px;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     background-color: $clr2;
                     border-radius: 10px 24px 24px 10px;
@@ -195,8 +195,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 52px auto;
-                    grid-template-rows: 52px;
+                    grid-template-columns: 36px auto;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -258,8 +258,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 52px;
-                    grid-template-rows: 48px;
+                    grid-template-columns: auto 36px;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     background-color: $clr2;
                     border-radius: 10px 24px 24px 10px;
@@ -292,8 +292,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 52px auto;
-                    grid-template-rows: 48px;
+                    grid-template-columns: 36px auto;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -355,8 +355,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 52px;
-                    grid-template-rows: 48px;
+                    grid-template-columns: auto 36px;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     background-color: $clr2;
                     border-radius: 10px 24px 24px 10px;
@@ -389,8 +389,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 52px auto;
-                    grid-template-rows: 52px;
+                    grid-template-columns: 36px auto;
+                    grid-template-rows: 36px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -426,6 +426,7 @@
         }
 
         .sec_cupon {
+            align-self: flex-end;
 
             @include brk320 {
                 padding-top: 20px;
@@ -440,7 +441,7 @@
             .gr_cupon {
                 width: 90%;
                 height: max-content;
-                padding: 20px 50px 0 8px;
+                padding: 0px 50px 0 8px;
                 margin: 0 auto;
 
                 .title {
@@ -455,7 +456,7 @@
                 .cont_input {
                     width: 100%;
                     max-width: 291px;
-                    height: 48px;
+                    height: 36px;
                     font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;
@@ -488,6 +489,7 @@
         }
 
         .sec_date {
+            align-self: flex-end;
             @include brk320 {
                 padding-top: 20px;
             }
@@ -495,13 +497,14 @@
             @include brk711 {
                 padding-top: 0px;
                 justify-self: stretch;
+                
                 grid-area: sec_date;
             }
 
             .gr_date {
                 width: 90%;
                 height: max-content;
-                padding: 20px 8px 0 50px;
+                padding: 0px 8px 0 50px;
                 margin: 0 auto;
 
                 .title {
@@ -516,7 +519,7 @@
                 .cont_input {
                     width: 100%;
                     max-width: 291px;
-                    height: 48px;
+                    height: 36px;
                     font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;

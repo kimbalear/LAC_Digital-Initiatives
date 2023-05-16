@@ -26,10 +26,10 @@ body {
   .lyt_card .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 222px auto;
+    grid-template-rows: auto 222px 80px;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 493px;
+    height: 480px;
     grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
   }
 }
@@ -103,7 +103,7 @@ body {
 }
 .lyt_card .card .header .sec_cui .gr_cui .cont_input {
   width: 100%;
-  height: 48px;
+  height: 36px;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
@@ -150,8 +150,8 @@ body {
 }
 .lyt_card .card .cnt_1 .cnt1_hd .cont_check {
   display: grid;
-  grid-template-columns: auto 52px;
-  grid-template-rows: 48px;
+  grid-template-columns: auto 36px;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   background-color: #FFFFFF;
   border-radius: 10px 24px 24px 10px;
@@ -179,8 +179,8 @@ body {
 }
 .lyt_card .card .cnt_1 .cnt1_1 .cont_check {
   display: grid;
-  grid-template-columns: 52px auto;
-  grid-template-rows: 52px;
+  grid-template-columns: 36px auto;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -234,8 +234,8 @@ body {
 }
 .lyt_card .card .cnt_2 .cnt2_hd .cont_check {
   display: grid;
-  grid-template-columns: auto 52px;
-  grid-template-rows: 48px;
+  grid-template-columns: auto 36px;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   background-color: #FFFFFF;
   border-radius: 10px 24px 24px 10px;
@@ -263,8 +263,8 @@ body {
 }
 .lyt_card .card .cnt_2 .cnt2_1 .cont_check {
   display: grid;
-  grid-template-columns: 52px auto;
-  grid-template-rows: 48px;
+  grid-template-columns: 36px auto;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -318,8 +318,8 @@ body {
 }
 .lyt_card .card .cnt_3 .cnt3_hd .cont_check {
   display: grid;
-  grid-template-columns: auto 52px;
-  grid-template-rows: 48px;
+  grid-template-columns: auto 36px;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   background-color: #FFFFFF;
   border-radius: 10px 24px 24px 10px;
@@ -347,8 +347,8 @@ body {
 }
 .lyt_card .card .cnt_3 .cnt3_1 .cont_check {
   display: grid;
-  grid-template-columns: 52px auto;
-  grid-template-rows: 52px;
+  grid-template-columns: 36px auto;
+  grid-template-rows: 36px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -376,6 +376,9 @@ body {
     font-weight: 400;
   }
 }
+.lyt_card .card .sec_cupon {
+  align-self: flex-end;
+}
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_cupon {
     padding-top: 20px;
@@ -391,7 +394,7 @@ body {
 .lyt_card .card .sec_cupon .gr_cupon {
   width: 90%;
   height: max-content;
-  padding: 20px 50px 0 8px;
+  padding: 0px 50px 0 8px;
   margin: 0 auto;
 }
 .lyt_card .card .sec_cupon .gr_cupon .title {
@@ -405,7 +408,7 @@ body {
 .lyt_card .card .sec_cupon .gr_cupon .cont_input {
   width: 100%;
   max-width: 291px;
-  height: 48px;
+  height: 36px;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
@@ -430,6 +433,9 @@ body {
   align-self: center;
   grid-area: sec_ngos;
 }
+.lyt_card .card .sec_date {
+  align-self: flex-end;
+}
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_date {
     padding-top: 20px;
@@ -445,7 +451,7 @@ body {
 .lyt_card .card .sec_date .gr_date {
   width: 90%;
   height: max-content;
-  padding: 20px 8px 0 50px;
+  padding: 0px 8px 0 50px;
   margin: 0 auto;
 }
 .lyt_card .card .sec_date .gr_date .title {
@@ -459,7 +465,7 @@ body {
 .lyt_card .card .sec_date .gr_date .cont_input {
   width: 100%;
   max-width: 291px;
-  height: 48px;
+  height: 36px;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
@@ -491,7 +497,7 @@ body {
 }
 
 .checkbox-wrapper-26 label {
-  --size: 36px;
+  --size: 30px;
   --shadow: calc(var(--size) * .07) calc(var(--size) * .1);
   position: relative;
   display: block;
