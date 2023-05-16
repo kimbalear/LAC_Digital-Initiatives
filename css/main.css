@@ -52,7 +52,6 @@ body {
   }
 }
 .lyt_card .card .header .sec_title {
-  padding-bottom: 20px;
   grid-area: sec_title;
 }
 .lyt_card .card .header .sec_title .gr_title {
@@ -65,7 +64,7 @@ body {
   color: #FFFFFF;
   text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
   font-weight: 800;
-  font-size: calc(3.7em + 1vw);
+  font-size: calc(4.1em + 1vw);
   letter-spacing: 0.03em;
 }
 .lyt_card .card .header .sec_title .gr_title .subtitle {
