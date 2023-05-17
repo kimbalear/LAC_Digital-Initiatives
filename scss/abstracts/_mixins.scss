@@ -1,5 +1,5 @@
 // Responsive mixins 
-
+// @include {}
 // desktop
 
 @mixin brk320 {
@@ -14,8 +14,20 @@
     }
 }
 
+@mixin brk710 {
+    @media only screen and (max-width: 710px) {
+        @content;
+    }
+}
+
 @mixin brk711 {
     @media only screen and (min-width: 711px) {
+        @content;
+    }
+}
+
+@mixin brk808 {
+    @media only screen and (max-width: 808px) {
         @content;
     }
 }

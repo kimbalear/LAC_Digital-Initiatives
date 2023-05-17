@@ -50,6 +50,10 @@
             .sec_title {
                 grid-area: sec_title;
 
+                @include brk710 {
+                    padding-bottom: 30px;
+                }
+
                 .gr_title {
                     position: relative;
                     width: max-content;
@@ -60,7 +64,7 @@
                         color: $clr2;
                         text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
                         font-weight: 800;
-                        font-size: calc(4.1em + 1vw);
+                        font-size: 5.1em;
                         letter-spacing: 0.03em;
                     }
 
@@ -69,14 +73,14 @@
                         bottom: -20px;
                         right: 28px;
                         width: max-content;
-                        font-size: 1.2vw;
+                        font-size: 1.2em;
                         font-weight: 700;
                         font-style: italic;
                         text-transform: uppercase;
                         color: $clr2;
                         padding: 0px 12px;
                         background-color: $clr5;
-                        border-radius: 10px;//ok
+                        border-radius: 10px; //ok
                         letter-spacing: 0.1em;
                         box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
                     }
@@ -110,7 +114,7 @@
                         color: $clr2;
                         padding: 4px 21px;
                         background-color: $clr2;
-                        border-radius: 10px;//ok
+                        border-radius: 10px; //ok
 
                         input[type="text"] {
                             width: 100%;
@@ -441,7 +445,17 @@
                 width: 90%;
                 height: max-content;
                 padding: 0px 50px 0 8px;
-                margin: 0 auto;
+
+                @include brk320 {
+                    width: 100%;
+                    padding: 0px 8px 0 8px;
+                }
+
+                @include brk711 {
+                    width: 90%;
+                    height: max-content;
+                    padding: 0px 50px 0 8px;
+                }
 
                 .title {
                     color: $clr1;
@@ -462,7 +476,11 @@
                     color: $clr2;
                     padding: 4px 21px;
                     background-color: $clr2;
-                    border-radius: 10px;//ok
+                    border-radius: 10px; //ok
+
+                    @include brk320 {
+                        max-width: none;
+                    }
 
                     input[type="text"] {
                         width: 100%;
@@ -489,6 +507,7 @@
 
         .sec_date {
             align-self: flex-end;
+
             @include brk320 {
                 padding-top: 20px;
             }
@@ -496,15 +515,22 @@
             @include brk711 {
                 padding-top: 0px;
                 justify-self: stretch;
-                
+
                 grid-area: sec_date;
             }
 
             .gr_date {
-                width: 90%;
-                height: max-content;
-                padding: 0px 8px 0 50px;
-                margin: 0 auto;
+
+                @include brk320 {
+                    width: 100%;
+                    padding: 0px 8px 72px 8px;
+                }
+
+                @include brk711 {
+                    width: 90%;
+                    height: max-content;
+                    padding: 0px 8px 0px 50px;
+                }
 
                 .title {
                     color: $clr1;
@@ -513,6 +539,10 @@
                     font-size: 0.75em;
                     letter-spacing: -0.01em;
                     font-weight: 700;
+
+                    @include brk808 {
+                        font-size: 0.7em;
+                    }
                 }
 
                 .cont_input {
@@ -525,7 +555,11 @@
                     color: $clr2;
                     padding: 4px 21px;
                     background-color: $clr2;
-                    border-radius: 10px;//ok
+                    border-radius: 10px; //ok
+
+                    @include brk320 {
+                        max-width: none;
+                    }
 
                     input[type="text"] {
                         width: 100%;

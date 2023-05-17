@@ -54,6 +54,11 @@ body {
 .lyt_card .card .header .sec_title {
   grid-area: sec_title;
 }
+@media only screen and (max-width: 710px) {
+  .lyt_card .card .header .sec_title {
+    padding-bottom: 30px;
+  }
+}
 .lyt_card .card .header .sec_title .gr_title {
   position: relative;
   width: max-content;
@@ -64,7 +69,7 @@ body {
   color: #FFFFFF;
   text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
   font-weight: 800;
-  font-size: calc(4.1em + 1vw);
+  font-size: 5.1em;
   letter-spacing: 0.03em;
 }
 .lyt_card .card .header .sec_title .gr_title .subtitle {
@@ -72,7 +77,7 @@ body {
   bottom: -20px;
   right: 28px;
   width: max-content;
-  font-size: 1.2vw;
+  font-size: 1.2em;
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
@@ -394,7 +399,19 @@ body {
   width: 90%;
   height: max-content;
   padding: 0px 50px 0 8px;
-  margin: 0 auto;
+}
+@media only screen and (min-width: 320px) {
+  .lyt_card .card .sec_cupon .gr_cupon {
+    width: 100%;
+    padding: 0px 8px 0 8px;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .lyt_card .card .sec_cupon .gr_cupon {
+    width: 90%;
+    height: max-content;
+    padding: 0px 50px 0 8px;
+  }
 }
 .lyt_card .card .sec_cupon .gr_cupon .title {
   color: #000000;
@@ -415,6 +432,11 @@ body {
   padding: 4px 21px;
   background-color: #FFFFFF;
   border-radius: 10px;
+}
+@media only screen and (min-width: 320px) {
+  .lyt_card .card .sec_cupon .gr_cupon .cont_input {
+    max-width: none;
+  }
 }
 .lyt_card .card .sec_cupon .gr_cupon .cont_input input[type=text] {
   width: 100%;
@@ -447,11 +469,18 @@ body {
     grid-area: sec_date;
   }
 }
-.lyt_card .card .sec_date .gr_date {
-  width: 90%;
-  height: max-content;
-  padding: 0px 8px 0 50px;
-  margin: 0 auto;
+@media only screen and (min-width: 320px) {
+  .lyt_card .card .sec_date .gr_date {
+    width: 100%;
+    padding: 0px 8px 72px 8px;
+  }
+}
+@media only screen and (min-width: 711px) {
+  .lyt_card .card .sec_date .gr_date {
+    width: 90%;
+    height: max-content;
+    padding: 0px 8px 0px 50px;
+  }
 }
 .lyt_card .card .sec_date .gr_date .title {
   color: #000000;
@@ -460,6 +489,11 @@ body {
   font-size: 0.75em;
   letter-spacing: -0.01em;
   font-weight: 700;
+}
+@media only screen and (max-width: 808px) {
+  .lyt_card .card .sec_date .gr_date .title {
+    font-size: 0.7em;
+  }
 }
 .lyt_card .card .sec_date .gr_date .cont_input {
   width: 100%;
@@ -472,6 +506,11 @@ body {
   padding: 4px 21px;
   background-color: #FFFFFF;
   border-radius: 10px;
+}
+@media only screen and (min-width: 320px) {
+  .lyt_card .card .sec_date .gr_date .cont_input {
+    max-width: none;
+  }
 }
 .lyt_card .card .sec_date .gr_date .cont_input input[type=text] {
   width: 100%;
@@ -636,26 +675,6 @@ body {
   height: 45px;
 }
 
-@media screen and (max-width: 711px) {
-  .lgsngos {
-    position: relative;
-    margin-top: -10px;
-  }
-}
-@media screen and (max-width: 510px) {
-  .lgsngos {
-    position: relative;
-    margin-top: -10px;
-  }
-  .lgsngos .lg1, .lgsngos .lg2, .lgsngos .lg3 {
-    justify-self: center;
-    align-self: center;
-  }
-  .lgsngos .lg1 img, .lgsngos .lg2 img, .lgsngos .lg3 img {
-    width: auto;
-    height: 15vw;
-  }
-}
 *,
 html,
 body {
