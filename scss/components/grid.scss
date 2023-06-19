@@ -19,7 +19,7 @@
         @include brk711 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 144.83px 222px 80px;
+            grid-template-rows: 144.83px 222.51px 80px;
             gap: 0px 0px;
             grid-auto-flow: row;
             height: 480px;
@@ -61,14 +61,14 @@
                     position: relative;
                     width: max-content;
                     height: max-content;
-                    padding: 0 4px;
+                    padding: 6px 4px 0;
 
                     .title {
                         color: $clr2;
-                        text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
+                        text-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                         font-weight: 900;
                         font-size: 5em;
-                        //letter-spacing: -12px;
+                        letter-spacing: 4.5px;
                         //font-stretch: ultra-condensed
                     }
 
@@ -77,7 +77,7 @@
                         bottom: -20px;
                         right: 28px;
                         width: max-content;
-                        font-size: 1.2em;
+                        font-size: 1.4em;
                         font-weight: 700;
                         font-style: italic;
                         text-transform: uppercase;
@@ -86,7 +86,7 @@
                         background-color: $clr5;
                         border-radius: 10px; //ok
                         letter-spacing: 0.1em;
-                        box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                     }
                 }
             }
@@ -198,7 +198,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
 
                 }
@@ -234,7 +233,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -304,7 +302,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
                 }
             }
@@ -339,7 +336,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -409,7 +405,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
                 }
             }
@@ -444,7 +439,6 @@
                         grid-area: lbl;
                         font-size: 1.3em;
                         font-weight: 700;
-                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -459,6 +453,7 @@
 
         .sec_cupon {
             align-self: flex-end;
+            background-color: red;
 
             @include brk320 {
                 padding-top: 20px;
@@ -536,6 +531,7 @@
 
         .sec_date {
             align-self: flex-end;
+            background-color: blue;
 
             @include brk320 {
                 padding-top: 20px;
@@ -544,11 +540,13 @@
             @include brk711 {
                 padding-top: 0px;
                 justify-self: stretch;
-
                 grid-area: sec_date;
             }
 
             .gr_date {
+                width: 90%;
+                height: max-content;
+                padding: 0px 50px 0 8px;
 
                 @include brk320 {
                     width: 100%;
@@ -558,7 +556,7 @@
                 @include brk711 {
                     width: 90%;
                     height: max-content;
-                    padding: 0px 8px 0px 5 0px;
+                    padding: 0px 50px 0 8px;
                 }
 
                 .title {
