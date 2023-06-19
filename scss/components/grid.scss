@@ -1,8 +1,9 @@
 .lyt_card {
     margin: 0 auto;
-    max-width: 800px;
+    width: 800px;
+    height: auto;
     background-color: $clr3;
-    padding: calc(4px + 0.5vw) calc(8px + 0.5vw) calc(2.5px + 0.5vw) calc(2.5px + 0.5vw);
+    padding: 13.55px 17.21px 10.95px 10.95px;
 
     .card {
         background-color: $clr3;
@@ -18,10 +19,12 @@
         @include brk711 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto 222px 80px;
+            grid-template-rows: 144.83px 222px 80px;
             gap: 0px 0px;
             grid-auto-flow: row;
             height: 480px;
+            padding: 0 2.6px 0 1.56px;
+            ;
             grid-template-areas:
                 "header header header"
                 "cnt_1 cnt_2 cnt_3"
@@ -63,9 +66,10 @@
                     .title {
                         color: $clr2;
                         text-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3);
-                        font-weight: 800;
-                        font-size: 5.1em;
-                        letter-spacing: 0.03em;
+                        font-weight: 900;
+                        font-size: 5em;
+                        //letter-spacing: -12px;
+                        //font-stretch: ultra-condensed
                     }
 
                     .subtitle {
@@ -89,7 +93,7 @@
 
             .sec_cui {
                 align-self: end;
-                padding-bottom: 16px;
+                padding-bottom: 10px;
                 grid-area: sec_cui;
 
                 .gr_cui {
@@ -99,22 +103,23 @@
                     margin: 0 auto;
 
                     .title {
-                        font-size: 1.4em;
+                        font-size: 1.35em;
                         font-weight: 600;
                         color: $clr1;
-                        padding-left: 20px;
+                        padding-left: 6px;
                     }
 
                     .cont_input {
                         width: 100%;
-                        height: 36px;
+                        max-width: 364px;
+                        height: 43.43px;
                         font-size: 1.2em;
                         font-weight: 500;
                         text-transform: uppercase;
                         color: $clr2;
                         padding: 4px 21px;
                         background-color: $clr2;
-                        border-radius: 10px; //ok
+                        border-radius: 11px; //ok
 
                         input[type="text"] {
                             width: 100%;
@@ -148,8 +153,8 @@
                 border: none;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: auto 1fr;
-                gap: 0px 0px;
+                grid-template-rows: auto 222.51px;
+                gap: 19.24px 0px;
                 grid-auto-flow: row;
                 grid-template-areas:
                     "cnt1_hd"
@@ -159,34 +164,41 @@
 
             .cnt1_hd {
                 grid-area: cnt1_hd;
-                padding: 16px;
+                padding: 7.76px 16px 0;
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 36px;
-                    grid-template-rows: 36px;
+                    grid-template-columns: auto 54.34px;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
-                    background-color: $clr2;
-                    border-radius: 10px 24px 24px 10px;
+                    background-color: $clr3;
+                    border-radius: 16.22px;
                     width: 100%;
                     padding-left: 18px;
                     margin: 0 auto;
-                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                     grid-template-areas:
                         "lbl cta";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
 
                 }
@@ -194,7 +206,7 @@
 
             .cnt1_1 {
                 grid-area: cnt1_1;
-                padding: 16px;
+                padding: 0 16px;
 
                 .cont_check {
                     display: grid;
@@ -212,7 +224,7 @@
                         align-self: center;
                         grid-area: cta;
                         background-color: $clr2;
-                        box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                         border-radius: 50px;
                     }
 
@@ -220,8 +232,9 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -246,8 +259,8 @@
                 border-right: 4px dotted $clr2;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: auto 1fr;
-                gap: 0px 0px;
+                grid-template-rows: auto 222.51px;
+                gap: 19.24px 0px;
                 grid-auto-flow: row;
                 grid-template-areas:
                     "cnt2_hd"
@@ -257,41 +270,48 @@
 
             .cnt2_hd {
                 grid-area: cnt2_hd;
-                padding: 16px;
+                padding: 7.76px 16px 0;
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 36px;
-                    grid-template-rows: 36px;
+                    grid-template-columns: auto 54.34px;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
-                    background-color: $clr2;
-                    border-radius: 10px 24px 24px 10px;
+                    background-color: $clr3;
+                    border-radius: 16.22px;
                     width: 100%;
                     padding-left: 18px;
                     margin: 0 auto;
-                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                     grid-template-areas:
                         "lbl cta";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
                 }
             }
 
             .cnt2_1 {
                 grid-area: cnt2_1;
-                padding: 16px;
+                padding: 0 16px;
 
                 .cont_check {
                     display: grid;
@@ -309,7 +329,7 @@
                         align-self: center;
                         grid-area: cta;
                         background-color: $clr2;
-                        box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                         border-radius: 50px;
                     }
 
@@ -317,8 +337,9 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -343,8 +364,8 @@
                 border: none;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: auto 1fr;
-                gap: 0px 0px;
+                grid-template-rows: auto 222.51px;
+                gap: 19.24px 0px;
                 grid-auto-flow: row;
                 grid-template-areas:
                     "cnt3_hd"
@@ -354,41 +375,48 @@
 
             .cnt3_hd {
                 grid-area: cnt3_hd;
-                padding: 16px;
+                padding: 7.76px 16px 0;
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: auto 36px;
-                    grid-template-rows: 36px;
+                    grid-template-columns: auto 54.34px;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
-                    background-color: $clr2;
-                    border-radius: 10px 24px 24px 10px;
+                    background-color: $clr3;
+                    border-radius: 16.22px;
                     width: 100%;
                     padding-left: 18px;
                     margin: 0 auto;
-                    box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                    box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                     grid-template-areas:
                         "lbl cta";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
                 }
             }
 
             .cnt3_1 {
                 grid-area: cnt3_1;
-                padding: 16px;
+                padding: 0 16px;
 
                 .cont_check {
                     display: grid;
@@ -406,7 +434,7 @@
                         align-self: center;
                         grid-area: cta;
                         background-color: $clr2;
-                        box-shadow: 6px 8px 1px rgba(0, 0, 0, 0.3);
+                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
                         border-radius: 50px;
                     }
 
@@ -414,8 +442,9 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.4em;
+                        font-size: 1.3em;
                         font-weight: 700;
+                        letter-spacing: -2px;
                     }
 
                     @media screen and (max-width: 783px) {
@@ -529,7 +558,7 @@
                 @include brk711 {
                     width: 90%;
                     height: max-content;
-                    padding: 0px 8px 0px 50px;
+                    padding: 0px 8px 0px 5 0px;
                 }
 
                 .title {
