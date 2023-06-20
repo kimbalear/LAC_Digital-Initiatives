@@ -12,54 +12,29 @@ body {
   padding: 13.55px 17.21px 10.95px 10.95px;
 }
 .lyt_card .card {
-  background-color: #A3D323;
+  width: 100%;
+  border: 5px solid #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 144.83px 222.51px auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  height: 469.05px;
+  padding: 0 2.6px 0 1.56px;
+  grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
 }
-@media only screen and (min-width: 320px) {
-  .lyt_card .card {
-    width: 100%;
-    display: inline-block;
-    height: max-content;
-    border: 5px solid #FFFFFF;
-    padding: 4px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 144.83px 222.51px auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    height: 469.05px;
-    padding: 0 2.6px 0 1.56px;
-    grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
-  }
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .header {
-    display: inline-block;
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "sec_title sec_cui";
-    grid-area: header;
-  }
+.lyt_card .card .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "sec_title sec_cui";
+  grid-area: header;
 }
 .lyt_card .card .header .sec_title {
   grid-area: sec_title;
-}
-@media only screen and (max-width: 710px) {
-  .lyt_card .card .header .sec_title {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 .lyt_card .card .header .sec_title .gr_title {
   position: relative;
@@ -131,25 +106,16 @@ body {
 .lyt_card .card .header .sec_cui .gr_cui .cont_input:focus-within {
   border: 4px solid #FF8607;
 }
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .cnt_1 {
-    border: none;
-    border-top: 4px dotted #FFFFFF;
-    border-bottom: 4px dotted #FFFFFF;
-    background-color: #00B3D4;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .cnt_1 {
-    border: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 222.51px;
-    gap: 19.24px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "cnt1_hd" "cnt1_1";
-    grid-area: cnt_1;
-  }
+.lyt_card .card .cnt_1 {
+  background-color: #00B3D4;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 222.51px;
+  gap: 19.24px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "cnt1_hd" "cnt1_1";
+  grid-area: cnt_1;
 }
 .lyt_card .card .cnt_1 .cnt1_hd {
   grid-area: cnt1_hd;
@@ -222,25 +188,18 @@ body {
     font-weight: 400;
   }
 }
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .cnt_2 {
-    border: none;
-    background-color: #00B3D4;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .cnt_2 {
-    border: none;
-    border-left: 4px dotted #FFFFFF;
-    border-right: 4px dotted #FFFFFF;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 222.51px;
-    gap: 19.24px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "cnt2_hd" "cnt2_1";
-    grid-area: cnt_2;
-  }
+.lyt_card .card .cnt_2 {
+  background-color: #00B3D4;
+  border: none;
+  border-left: 4px dotted #FFFFFF;
+  border-right: 4px dotted #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 222.51px;
+  gap: 19.24px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "cnt2_hd" "cnt2_1";
+  grid-area: cnt_2;
 }
 .lyt_card .card .cnt_2 .cnt2_hd {
   grid-area: cnt2_hd;
@@ -313,25 +272,16 @@ body {
     font-weight: 400;
   }
 }
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .cnt_3 {
-    border: none;
-    border-top: 4px dotted #FFFFFF;
-    border-bottom: 4px dotted #FFFFFF;
-    background-color: #00B3D4;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .cnt_3 {
-    border: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 222.51px;
-    gap: 19.24px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "cnt3_hd" "cnt3_1";
-    grid-area: cnt_3;
-  }
+.lyt_card .card .cnt_3 {
+  background-color: #00B3D4;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 222.51px;
+  gap: 19.24px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "cnt3_hd" "cnt3_1";
+  grid-area: cnt_3;
 }
 .lyt_card .card .cnt_3 .cnt3_hd {
   grid-area: cnt3_hd;
@@ -406,36 +356,14 @@ body {
 }
 .lyt_card .card .sec_cupon {
   align-self: flex-end;
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_cupon {
-    padding-top: 20px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .sec_cupon {
-    padding-top: 0px;
-    justify-self: stretch;
-    grid-area: sec_cupon;
-  }
+  padding-top: 0px;
+  justify-self: stretch;
+  grid-area: sec_cupon;
 }
 .lyt_card .card .sec_cupon .gr_cupon {
   width: 90%;
   height: max-content;
-  padding: 0px 50px 0 8px;
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_cupon .gr_cupon {
-    width: 100%;
-    padding: 0px 8px 0 8px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .sec_cupon .gr_cupon {
-    width: 90%;
-    height: max-content;
-    padding: 9.33px 50px 3.61px 8px;
-  }
+  padding: 9.33px 50px 3.61px 8px;
 }
 .lyt_card .card .sec_cupon .gr_cupon .title {
   width: 100%;
@@ -459,11 +387,6 @@ body {
   background-color: #FFFFFF;
   border-radius: 11px;
 }
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_cupon .gr_cupon .cont_input {
-    max-width: none;
-  }
-}
 .lyt_card .card .sec_cupon .gr_cupon .cont_input input[type=text] {
   width: 100%;
   height: 100%;
@@ -482,34 +405,14 @@ body {
 }
 .lyt_card .card .sec_date {
   align-self: flex-end;
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_date {
-    padding-top: 20px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .sec_date {
-    padding-top: 0px;
-    justify-self: stretch;
-    grid-area: sec_date;
-  }
+  padding-top: 0px;
+  justify-self: stretch;
+  grid-area: sec_date;
 }
 .lyt_card .card .sec_date .gr_date {
   width: 90%;
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_date .gr_date {
-    width: 100%;
-    padding: 0px 8px 72px 8px;
-  }
-}
-@media only screen and (min-width: 711px) {
-  .lyt_card .card .sec_date .gr_date {
-    width: 90%;
-    height: max-content;
-    padding: 9.33px 50px 3.61px 8px;
-  }
+  height: max-content;
+  padding: 9.33px 50px 3.61px 8px;
 }
 .lyt_card .card .sec_date .gr_date .title {
   width: 100%;
@@ -537,11 +440,6 @@ body {
   padding: 4px 21px;
   background-color: #FFFFFF;
   border-radius: 11px;
-}
-@media only screen and (min-width: 320px) {
-  .lyt_card .card .sec_date .gr_date .cont_input {
-    max-width: none;
-  }
 }
 .lyt_card .card .sec_date .gr_date .cont_input input[type=text] {
   width: 100%;
@@ -707,21 +605,10 @@ body {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 320px) {
-  html,
+html,
 body {
-    width: 100%;
-    height: auto;
-    overflow: auto;
-  }
-}
-@media only screen and (min-width: 711px) {
-  html,
-body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -731,25 +618,12 @@ body {
 }
 body .wrapper {
   position: relative;
-}
-@media only screen and (min-width: 320px) {
-  body .wrapper {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border: none;
-    padding: 0;
-  }
-}
-@media only screen and (min-width: 711px) {
-  body .wrapper {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    max-height: 492.51px;
-    margin: 0 auto;
-    padding: 16px;
-  }
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 492.51px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,56 +6,38 @@
     padding: 13.55px 17.21px 10.95px 10.95px;
 
     .card {
-        background-color: $clr3;
+        width: 100%;
+        border: 5px solid $clr2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 144.83px 222.51px auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        height: calc(480px - 10.95px);
+        padding: 0 2.6px 0 1.56px;
+        ;
+        grid-template-areas:
+            "header header header"
+            "cnt_1 cnt_2 cnt_3"
+            "sec_cupon sec_ngos sec_date";
 
-        @include brk320 {
-            width: 100%;
-            display: inline-block;
-            height: max-content;
-            border: 5px solid $clr2;
-            padding: 4px;
-        }
-
-        @include brk711 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 144.83px 222.51px auto;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            height: calc(480px - 10.95px);
-            padding: 0 2.6px 0 1.56px;
-            ;
-            grid-template-areas:
-                "header header header"
-                "cnt_1 cnt_2 cnt_3"
-                "sec_cupon sec_ngos sec_date";
-        }
 
         .header {
 
-            @include brk320 {
-                display: inline-block;
-                width: 100%;
-                padding-bottom: 20px;
-            }
-
-            @include brk711 {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                gap: 0px 0px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "sec_title sec_cui";
-                grid-area: header;
-            }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "sec_title sec_cui";
+            grid-area: header;
 
             .sec_title {
                 grid-area: sec_title;
 
-                @include brk710 {
-                    padding-bottom: 30px;
-                }
+                padding-bottom: 30px;
+
 
                 .gr_title {
                     position: relative;
@@ -141,26 +123,19 @@
         }
 
         .cnt_1 {
+            background-color: $clr6;
 
-            @include brk320 {
-                border: none;
-                border-top: 4px dotted $clr2;
-                border-bottom: 4px dotted $clr2;
-                background-color: $clr6;
-            }
+            border: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 222.51px;
+            gap: 19.24px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "cnt1_hd"
+                "cnt1_1";
+            grid-area: cnt_1;
 
-            @include brk711 {
-                border: none;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto 222.51px;
-                gap: 19.24px 0px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "cnt1_hd"
-                    "cnt1_1";
-                grid-area: cnt_1;
-            }
 
             .cnt1_hd {
                 grid-area: cnt1_hd;
@@ -249,25 +224,22 @@
         }
 
         .cnt_2 {
-            @include brk320 {
-                border: none;
-                background-color: $clr6;
-            }
 
-            @include brk711 {
-                border: none;
-                border-left: 4px dotted $clr2;
-                border-right: 4px dotted $clr2;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto 222.51px;
-                gap: 19.24px 0px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "cnt2_hd"
-                    "cnt2_1";
-                grid-area: cnt_2;
-            }
+            background-color: $clr6;
+
+            border: none;
+            border-left: 4px dotted $clr2;
+            border-right: 4px dotted $clr2;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 222.51px;
+            gap: 19.24px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "cnt2_hd"
+                "cnt2_1";
+            grid-area: cnt_2;
+
 
             .cnt2_hd {
                 grid-area: cnt2_hd;
@@ -355,25 +327,20 @@
         }
 
         .cnt_3 {
-            @include brk320 {
-                border: none;
-                border-top: 4px dotted $clr2;
-                border-bottom: 4px dotted $clr2;
-                background-color: $clr6;
-            }
 
-            @include brk711 {
-                border: none;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto 222.51px;
-                gap: 19.24px 0px;
-                grid-auto-flow: row;
-                grid-template-areas:
-                    "cnt3_hd"
-                    "cnt3_1";
-                grid-area: cnt_3;
-            }
+            background-color: $clr6;
+
+            border: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 222.51px;
+            gap: 19.24px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "cnt3_hd"
+                "cnt3_1";
+            grid-area: cnt_3;
+
 
             .cnt3_hd {
                 grid-area: cnt3_hd;
@@ -462,33 +429,18 @@
 
         .sec_cupon {
             align-self: flex-end;
-            //padding-bottom: 9.48px;
 
-            @include brk320 {
-                padding-top: 20px;
-            }
+            padding-top: 0px;
+            justify-self: stretch;
+            grid-area: sec_cupon;
 
-            @include brk711 {
-                padding-top: 0px;
-                justify-self: stretch;
-                grid-area: sec_cupon;
-            }
 
             .gr_cupon {
                 width: 90%;
                 height: max-content;
-                padding: 0px 50px 0 8px;
 
-                @include brk320 {
-                    width: 100%;
-                    padding: 0px 8px 0 8px;
-                }
+                padding: 9.33px 50px 3.61px 8px;
 
-                @include brk711 {
-                    width: 90%;
-                    height: max-content;
-                    padding: 9.33px 50px 3.61px 8px;
-                }
 
                 .title {
                     width: 100%;
@@ -514,9 +466,6 @@
                     background-color: $clr2;
                     border-radius: 11px; //ok
 
-                    @include brk320 {
-                        max-width: none;
-                    }
 
                     input[type="text"] {
                         width: 100%;
@@ -543,37 +492,21 @@
 
         .sec_date {
             align-self: flex-end;
-           // padding-bottom: 9.48px;
-
-            @include brk320 {
-                padding-top: 20px;
-            }
-
-            @include brk711 {
-                padding-top: 0px;
-                justify-self: stretch;
-                grid-area: sec_date;
-            }
+            padding-top: 0px;
+            justify-self: stretch;
+            grid-area: sec_date;
 
             .gr_date {
+
                 width: 90%;
+                height: max-content;
+                padding: 9.33px 50px 3.61px 8px;
 
-                @include brk320 {
-                    width: 100%;
-                    padding: 0px 8px 72px 8px;
-                }
-
-                @include brk711 {
-                    width: 90%;
-                    height: max-content;
-                    padding: 9.33px 50px 3.61px 8px;
-                }
 
                 .title {
                     width: 100%;
                     text-align: center;
                     color: $clr1;
-                    //padding-left: 10px;
                     font-weight: 500;
                     font-size: 0.75em;
                     line-height: 2em;
@@ -596,10 +529,6 @@
                     padding: 4px 21px;
                     background-color: $clr2;
                     border-radius: 11px; //ok
-
-                    @include brk320 {
-                        max-width: none;
-                    }
 
                     input[type="text"] {
                         width: 100%;
