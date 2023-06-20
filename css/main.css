@@ -27,10 +27,10 @@ body {
   .lyt_card .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 144.83px 222.51px 80px;
+    grid-template-rows: 144.83px 222.51px auto;
     gap: 0px 0px;
     grid-auto-flow: row;
-    height: 480px;
+    height: 469.05px;
     padding: 0 2.6px 0 1.56px;
     grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
   }
@@ -191,8 +191,8 @@ body {
 }
 .lyt_card .card .cnt_1 .cnt1_1 .cont_check {
   display: grid;
-  grid-template-columns: 36px auto;
-  grid-template-rows: 36px;
+  grid-template-columns: 54.34px auto;
+  grid-template-rows: 38.13px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -200,12 +200,14 @@ body {
   grid-template-areas: "cta lbl ";
 }
 .lyt_card .card .cnt_1 .cnt1_1 .cont_check .cta {
-  justify-self: center;
-  align-self: center;
   grid-area: cta;
-  background-color: #FFFFFF;
-  box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+}
+.lyt_card .card .cnt_1 .cnt1_1 .cont_check .cta .rd_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .lyt_card .card .cnt_1 .cnt1_1 .cont_check .lbl {
   justify-self: start;
@@ -280,8 +282,8 @@ body {
 }
 .lyt_card .card .cnt_2 .cnt2_1 .cont_check {
   display: grid;
-  grid-template-columns: 36px auto;
-  grid-template-rows: 36px;
+  grid-template-columns: 54.34px auto;
+  grid-template-rows: 38.13px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -289,12 +291,14 @@ body {
   grid-template-areas: "cta lbl ";
 }
 .lyt_card .card .cnt_2 .cnt2_1 .cont_check .cta {
-  justify-self: center;
-  align-self: center;
   grid-area: cta;
-  background-color: #FFFFFF;
-  box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+}
+.lyt_card .card .cnt_2 .cnt2_1 .cont_check .cta .rd_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .lyt_card .card .cnt_2 .cnt2_1 .cont_check .lbl {
   justify-self: start;
@@ -369,8 +373,8 @@ body {
 }
 .lyt_card .card .cnt_3 .cnt3_1 .cont_check {
   display: grid;
-  grid-template-columns: 36px auto;
-  grid-template-rows: 36px;
+  grid-template-columns: 54.34px auto;
+  grid-template-rows: 38.13px;
   gap: 0px 8px;
   width: 100%;
   padding-right: 18px;
@@ -378,12 +382,14 @@ body {
   grid-template-areas: "cta lbl ";
 }
 .lyt_card .card .cnt_3 .cnt3_1 .cont_check .cta {
-  justify-self: center;
-  align-self: center;
   grid-area: cta;
-  background-color: #FFFFFF;
-  box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+}
+.lyt_card .card .cnt_3 .cnt3_1 .cont_check .cta .rd_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .lyt_card .card .cnt_3 .cnt3_1 .cont_check .lbl {
   justify-self: start;
@@ -400,7 +406,6 @@ body {
 }
 .lyt_card .card .sec_cupon {
   align-self: flex-end;
-  background-color: red;
 }
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_cupon {
@@ -429,28 +434,30 @@ body {
   .lyt_card .card .sec_cupon .gr_cupon {
     width: 90%;
     height: max-content;
-    padding: 0px 50px 0 8px;
+    padding: 9.33px 50px 3.61px 8px;
   }
 }
 .lyt_card .card .sec_cupon .gr_cupon .title {
+  width: 100%;
+  text-align: center;
   color: #000000;
-  padding-left: 10px;
   font-weight: 500;
   font-size: 0.75em;
+  line-height: 2em;
   letter-spacing: -0.01em;
-  font-weight: 700;
+  font-weight: 600;
 }
 .lyt_card .card .sec_cupon .gr_cupon .cont_input {
   width: 100%;
   max-width: 291px;
-  height: 36px;
+  height: 43.43px;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 4px 21px;
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_cupon .gr_cupon .cont_input {
@@ -475,7 +482,6 @@ body {
 }
 .lyt_card .card .sec_date {
   align-self: flex-end;
-  background-color: blue;
 }
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_date {
@@ -491,8 +497,6 @@ body {
 }
 .lyt_card .card .sec_date .gr_date {
   width: 90%;
-  height: max-content;
-  padding: 0px 50px 0 8px;
 }
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_date .gr_date {
@@ -504,16 +508,18 @@ body {
   .lyt_card .card .sec_date .gr_date {
     width: 90%;
     height: max-content;
-    padding: 0px 50px 0 8px;
+    padding: 9.33px 50px 3.61px 8px;
   }
 }
 .lyt_card .card .sec_date .gr_date .title {
+  width: 100%;
+  text-align: center;
   color: #000000;
-  padding-left: 10px;
   font-weight: 500;
   font-size: 0.75em;
+  line-height: 2em;
   letter-spacing: -0.01em;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media only screen and (max-width: 808px) {
   .lyt_card .card .sec_date .gr_date .title {
@@ -523,14 +529,14 @@ body {
 .lyt_card .card .sec_date .gr_date .cont_input {
   width: 100%;
   max-width: 291px;
-  height: 36px;
+  height: 43.43px;
   font-size: 1.2em;
   font-weight: 500;
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 4px 21px;
   background-color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 11px;
 }
 @media only screen and (min-width: 320px) {
   .lyt_card .card .sec_date .gr_date .cont_input {
@@ -649,7 +655,7 @@ body {
 
 .lgsngos {
   position: absolute;
-  bottom: 0;
+  bottom: -17;
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
@@ -739,7 +745,8 @@ body .wrapper {
   body .wrapper {
     width: 100%;
     height: auto;
-    max-width: 1280px;
+    max-width: 800px;
+    max-height: 492.51px;
     margin: 0 auto;
     padding: 16px;
   }

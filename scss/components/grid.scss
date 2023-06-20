@@ -19,10 +19,10 @@
         @include brk711 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 144.83px 222.51px 80px;
+            grid-template-rows: 144.83px 222.51px auto;
             gap: 0px 0px;
             grid-auto-flow: row;
-            height: 480px;
+            height: calc(480px - 10.95px);
             padding: 0 2.6px 0 1.56px;
             ;
             grid-template-areas:
@@ -209,8 +209,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 36px auto;
-                    grid-template-rows: 36px;
+                    grid-template-columns: 54.34px auto;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -219,12 +219,15 @@
                         "cta lbl ";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
-                        background-color: $clr2;
-                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-                        border-radius: 50px;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
@@ -312,8 +315,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 36px auto;
-                    grid-template-rows: 36px;
+                    grid-template-columns: 54.34px auto;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -322,12 +325,15 @@
                         "cta lbl ";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
-                        background-color: $clr2;
-                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-                        border-radius: 50px;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
@@ -415,8 +421,8 @@
 
                 .cont_check {
                     display: grid;
-                    grid-template-columns: 36px auto;
-                    grid-template-rows: 36px;
+                    grid-template-columns: 54.34px auto;
+                    grid-template-rows: 38.13px;
                     gap: 0px 8px;
                     width: 100%;
                     padding-right: 18px;
@@ -425,12 +431,15 @@
                         "cta lbl ";
 
                     .cta {
-                        justify-self: center;
-                        align-self: center;
                         grid-area: cta;
-                        background-color: $clr2;
-                        box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
-                        border-radius: 50px;
+                        background-image: url('data:image/svg+xml,<svg width="55" height="39" viewBox="0 0 55 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.57605" y="0.496368" width="54.3414" height="38.1752" rx="16.218" fill="white"/></svg>');
+
+                        .rd_btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
                     }
 
                     .lbl {
@@ -453,7 +462,7 @@
 
         .sec_cupon {
             align-self: flex-end;
-            background-color: red;
+            //padding-bottom: 9.48px;
 
             @include brk320 {
                 padding-top: 20px;
@@ -478,29 +487,32 @@
                 @include brk711 {
                     width: 90%;
                     height: max-content;
-                    padding: 0px 50px 0 8px;
+                    padding: 9.33px 50px 3.61px 8px;
                 }
 
                 .title {
+                    width: 100%;
+                    text-align: center;
                     color: $clr1;
-                    padding-left: 10px;
+                    //padding-left: 10px;
                     font-weight: 500;
                     font-size: 0.75em;
+                    line-height: 2em;
                     letter-spacing: -0.01em;
-                    font-weight: 700;
+                    font-weight: 600;
                 }
 
                 .cont_input {
                     width: 100%;
                     max-width: 291px;
-                    height: 36px;
+                    height: 43.43px;
                     font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;
                     color: $clr2;
                     padding: 4px 21px;
                     background-color: $clr2;
-                    border-radius: 10px; //ok
+                    border-radius: 11px; //ok
 
                     @include brk320 {
                         max-width: none;
@@ -531,7 +543,7 @@
 
         .sec_date {
             align-self: flex-end;
-            background-color: blue;
+           // padding-bottom: 9.48px;
 
             @include brk320 {
                 padding-top: 20px;
@@ -545,8 +557,6 @@
 
             .gr_date {
                 width: 90%;
-                height: max-content;
-                padding: 0px 50px 0 8px;
 
                 @include brk320 {
                     width: 100%;
@@ -556,16 +566,19 @@
                 @include brk711 {
                     width: 90%;
                     height: max-content;
-                    padding: 0px 50px 0 8px;
+                    padding: 9.33px 50px 3.61px 8px;
                 }
 
                 .title {
+                    width: 100%;
+                    text-align: center;
                     color: $clr1;
-                    padding-left: 10px;
+                    //padding-left: 10px;
                     font-weight: 500;
                     font-size: 0.75em;
+                    line-height: 2em;
                     letter-spacing: -0.01em;
-                    font-weight: 700;
+                    font-weight: 600;
 
                     @include brk808 {
                         font-size: 0.7em;
@@ -575,14 +588,14 @@
                 .cont_input {
                     width: 100%;
                     max-width: 291px;
-                    height: 36px;
+                    height: 43.43px;
                     font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;
                     color: $clr2;
                     padding: 4px 21px;
                     background-color: $clr2;
-                    border-radius: 10px; //ok
+                    border-radius: 11px; //ok
 
                     @include brk320 {
                         max-width: none;
