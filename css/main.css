@@ -552,10 +552,7 @@ body {
 }
 
 .lgsngos {
-  position: absolute;
-  bottom: -17;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: -65 auto;
   width: max-content;
   height: auto;
   background-color: #FFFFFF;
@@ -613,13 +610,12 @@ body {
 
 body {
   background-color: #FFFFFF;
-  padding: 16px;
   margin: 1% 0 0;
 }
 body .wrapper {
   position: relative;
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   max-width: 800px;
   max-height: 492.51px;
   margin: 0 auto;
