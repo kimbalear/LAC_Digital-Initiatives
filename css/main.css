@@ -21,35 +21,35 @@ body {
   grid-auto-flow: row;
   height: 469.05px;
   padding: 0 2.6px 0 1.56px;
-  grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
+  grid-template-areas: "hder hder hder" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
 }
-.lyt_card .card .header {
+.lyt_card .card .hder {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "sec_title sec_cui";
-  grid-area: header;
+  grid-area: hder;
 }
-.lyt_card .card .header .sec_title {
+.lyt_card .card .hder .sec_title {
   grid-area: sec_title;
   padding-bottom: 30px;
 }
-.lyt_card .card .header .sec_title .gr_title {
+.lyt_card .card .hder .sec_title .gr_title {
   position: relative;
   width: max-content;
   height: max-content;
   padding: 6px 4px 0;
 }
-.lyt_card .card .header .sec_title .gr_title .title {
+.lyt_card .card .hder .sec_title .gr_title .title {
   color: #FFFFFF;
   text-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
   font-weight: 900;
   font-size: 5em;
   letter-spacing: 4.5px;
 }
-.lyt_card .card .header .sec_title .gr_title .subtitle {
+.lyt_card .card .hder .sec_title .gr_title .subtitle {
   position: absolute;
   bottom: -20px;
   right: 28px;
@@ -65,24 +65,24 @@ body {
   letter-spacing: 0.1em;
   box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
 }
-.lyt_card .card .header .sec_cui {
+.lyt_card .card .hder .sec_cui {
   align-self: end;
   padding-bottom: 10px;
   grid-area: sec_cui;
 }
-.lyt_card .card .header .sec_cui .gr_cui {
+.lyt_card .card .hder .sec_cui .gr_cui {
   width: 100%;
   height: max-content;
   padding: 8px;
   margin: 0 auto;
 }
-.lyt_card .card .header .sec_cui .gr_cui .title {
+.lyt_card .card .hder .sec_cui .gr_cui .title {
   font-size: 1.35em;
   font-weight: 600;
   color: #000000;
   padding-left: 6px;
 }
-.lyt_card .card .header .sec_cui .gr_cui .cont_input {
+.lyt_card .card .hder .sec_cui .gr_cui .cont_input {
   width: 100%;
   max-width: 364px;
   height: 43.43px;
@@ -94,16 +94,16 @@ body {
   background-color: #FFFFFF;
   border-radius: 11px;
 }
-.lyt_card .card .header .sec_cui .gr_cui .cont_input input[type=text] {
+.lyt_card .card .hder .sec_cui .gr_cui .cont_input input[type=text] {
   width: 100%;
   height: 100%;
   border: none;
   font-size: 1.2em;
 }
-.lyt_card .card .header .sec_cui .gr_cui .cont_input input[type=text]:focus {
+.lyt_card .card .hder .sec_cui .gr_cui .cont_input input[type=text]:focus {
   outline: none;
 }
-.lyt_card .card .header .sec_cui .gr_cui .cont_input:focus-within {
+.lyt_card .card .hder .sec_cui .gr_cui .cont_input:focus-within {
   border: 4px solid #FF8607;
 }
 .lyt_card .card .cnt_1 {
@@ -459,45 +459,58 @@ body {
   width: 800px;
   height: auto;
   background-color: #E0C715;
-  padding: 13.55px 17.21px 10.95px 10.95px;
+  padding: 13.55px 0px 10.95px 10.95px;
 }
 .lyt_card_prep .card {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 17.21px;
   grid-template-rows: 150.83px auto 156px;
   gap: 0px 0px;
   grid-auto-flow: row;
   padding: 0;
-  grid-template-areas: "header header header" "cnt_1 cnt_2 cnt_3" "sec_cupon sec_ngos sec_date";
+  grid-template-areas: "hder hder hder mssg" "cnt_1 cnt_2 cnt_3 mssg" "sec_cupon sec_ngos sec_date mssg";
 }
-.lyt_card_prep .card .header {
+.lyt_card_prep .card .mssg {
+  grid-area: mssg;
+  align-self: center;
+}
+.lyt_card_prep .card .mssg p {
+  margin: 0 auto;
+  font-size: 0.7em;
+  line-height: 0.7em;
+  font-weight: 800;
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+  text-align: center;
+}
+.lyt_card_prep .card .hder {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "sec_title sec_cui";
-  grid-area: header;
+  grid-area: hder;
 }
-.lyt_card_prep .card .header .sec_title {
+.lyt_card_prep .card .hder .sec_title {
   grid-area: sec_title;
   padding-bottom: 30px;
 }
-.lyt_card_prep .card .header .sec_title .gr_title {
+.lyt_card_prep .card .hder .sec_title .gr_title {
   position: relative;
   width: max-content;
   height: max-content;
   padding: 6px 4px 0;
 }
-.lyt_card_prep .card .header .sec_title .gr_title .title {
+.lyt_card_prep .card .hder .sec_title .gr_title .title {
   color: #FFFFFF;
   text-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
   font-weight: 900;
   font-size: 5em;
   letter-spacing: 4.5px;
 }
-.lyt_card_prep .card .header .sec_title .gr_title .subtitle {
+.lyt_card_prep .card .hder .sec_title .gr_title .subtitle {
   position: absolute;
   bottom: -20px;
   right: 28px;
@@ -513,24 +526,24 @@ body {
   letter-spacing: 0.1em;
   box-shadow: 3.64px 4.22px 0 rgba(0, 0, 0, 0.3);
 }
-.lyt_card_prep .card .header .sec_cui {
+.lyt_card_prep .card .hder .sec_cui {
   align-self: end;
   padding-bottom: 10px;
   grid-area: sec_cui;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui {
+.lyt_card_prep .card .hder .sec_cui .gr_cui {
   width: 100%;
   height: max-content;
   padding: 8px;
   margin: 0 auto;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui .title {
+.lyt_card_prep .card .hder .sec_cui .gr_cui .title {
   font-size: 1.35em;
   font-weight: 600;
   color: #000000;
   padding-left: 6px;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui .cont_input {
+.lyt_card_prep .card .hder .sec_cui .gr_cui .cont_input {
   width: 100%;
   max-width: 364px;
   height: 43.43px;
@@ -542,16 +555,16 @@ body {
   background-color: #FFFFFF;
   border-radius: 11px;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui .cont_input input[type=text] {
+.lyt_card_prep .card .hder .sec_cui .gr_cui .cont_input input[type=text] {
   width: 100%;
   height: 100%;
   border: none;
   font-size: 1.2em;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui .cont_input input[type=text]:focus {
+.lyt_card_prep .card .hder .sec_cui .gr_cui .cont_input input[type=text]:focus {
   outline: none;
 }
-.lyt_card_prep .card .header .sec_cui .gr_cui .cont_input:focus-within {
+.lyt_card_prep .card .hder .sec_cui .gr_cui .cont_input:focus-within {
   border: 4px solid #FF8607;
 }
 .lyt_card_prep .card .cnt_1 {
@@ -609,6 +622,8 @@ body {
   display: grid;
   grid-auto-rows: 51px;
   gap: 4.7px;
+  border-left: 4px dotted #FFFFFF;
+  border-right: 4px dotted #FFFFFF;
 }
 .lyt_card_prep .card .cnt_2 > div {
   padding: 7px 0 7px 7px;
@@ -749,6 +764,7 @@ body {
 .lyt_card_prep .card .sec_lgs {
   align-self: flex-start;
   justify-self: center;
+  padding-top: 12px;
   grid-area: sec_ngos;
 }
 .lyt_card_prep .card .sec_lgs .lgo {
@@ -905,7 +921,7 @@ body {
 }
 
 .lgsngos {
-  margin: -65 auto;
+  margin: -59 auto;
   width: max-content;
   height: auto;
   background-color: #FFFFFF;
@@ -926,7 +942,7 @@ body {
 }
 .lgsngos .lg1 img {
   width: auto;
-  height: 45px;
+  height: 38px;
 }
 .lgsngos .lg2 {
   grid-area: lg2;
@@ -936,7 +952,7 @@ body {
 }
 .lgsngos .lg2 img {
   width: auto;
-  height: 45px;
+  height: 38px;
 }
 .lgsngos .lg3 {
   grid-area: lg3;
@@ -946,7 +962,7 @@ body {
 }
 .lgsngos .lg3 img {
   width: auto;
-  height: 45px;
+  height: 38px;
 }
 
 *,
@@ -974,4 +990,4 @@ body .wrapper {
   max-height: 492.51px;
 }
 
-/*# sourceMappingURL=main_prep.css.map */
+/*# sourceMappingURL=main.css.map */

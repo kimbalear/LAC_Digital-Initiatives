@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="hder"></div>
+  <div class="cnt_1"></div>
+  <div class="cnt_2"></div>
+  <div class="cnt_3"></div>
+  <div class="sec_cupon"></div>
+  <div class="sec_lgs"></div>
+  <div class="sec_date"></div>
+  <div class="mssg">
+    <p>*Este cupón vence en un mes, despues de su creación</p>
+  </div>
+</div>
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 17.21px;
+  grid-template-rows: 150.83px auto 156px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  padding: 0;
+  grid-template-areas:
+      "hder hder hder mssg"
+      "cnt_1 cnt_2 cnt_3 mssg"
+      "sec_cupon sec_ngos sec_date mssg";
+  }
