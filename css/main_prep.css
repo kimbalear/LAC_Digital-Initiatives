@@ -559,11 +559,11 @@ body {
   grid-area: cnt_1;
   background-color: #00B3D4;
   display: grid;
-  grid-auto-rows: 71px;
-  gap: 0px;
+  grid-auto-rows: 52px;
+  gap: 10px;
 }
 .lyt_card_prep .card .cnt_1 > div {
-  padding: 16px 0 16px 8px;
+  padding: 7px 0 7px 7px;
 }
 .lyt_card_prep .card .cnt_1 > div .cont_check {
   display: grid;
@@ -589,7 +589,7 @@ body {
   justify-self: start;
   align-self: center;
   grid-area: lbl;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 @media screen and (max-width: 783px) {
@@ -608,11 +608,11 @@ body {
   grid-area: cnt_2;
   background-color: #00B3D4;
   display: grid;
-  grid-auto-rows: 71px;
-  gap: 0px;
+  grid-auto-rows: 52px;
+  gap: 10px;
 }
 .lyt_card_prep .card .cnt_2 > div {
-  padding: 16px 0 16px 8px;
+  padding: 7px 0 7px 7px;
 }
 .lyt_card_prep .card .cnt_2 > div .cont_check {
   display: grid;
@@ -638,7 +638,7 @@ body {
   justify-self: start;
   align-self: center;
   grid-area: lbl;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 @media screen and (max-width: 783px) {
@@ -657,11 +657,11 @@ body {
   grid-area: cnt_3;
   background-color: #00B3D4;
   display: grid;
-  grid-auto-rows: 71px;
-  gap: 0px;
+  grid-auto-rows: 52px;
+  gap: 10px;
 }
 .lyt_card_prep .card .cnt_3 > div {
-  padding: 16px 0 16px 8px;
+  padding: 7px 0 7px 7px;
 }
 .lyt_card_prep .card .cnt_3 > div .cont_check {
   display: grid;
@@ -687,7 +687,7 @@ body {
   justify-self: start;
   align-self: center;
   grid-area: lbl;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 @media screen and (max-width: 783px) {

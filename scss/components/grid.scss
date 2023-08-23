@@ -677,11 +677,11 @@
             grid-area: cnt_1;
             background-color: $clrbk;
             display: grid;
-            grid-auto-rows: 71px;
-            gap: 0px;
+            grid-auto-rows: 52px;
+            gap: 10px;
 
             &>div {
-                padding: 16px 0 16px 8px;
+                padding: 7px 0 7px 7px;
 
                 .cont_check {
                     display: grid;
@@ -710,7 +710,7 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.3em;
+                        font-size: 1.2em;
                         font-weight: 700;
                     }
 
@@ -735,11 +735,11 @@
             grid-area: cnt_2;
             background-color: $clrbk;
             display: grid;
-            grid-auto-rows: 71px;
-            gap: 0px;
+            grid-auto-rows: 52px;
+            gap: 10px;
 
             &>div {
-                padding: 16px 0 16px 8px;
+                padding: 7px 0 7px 7px;
 
                 .cont_check {
                     display: grid;
@@ -768,7 +768,7 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.3em;
+                        font-size: 1.2em;
                         font-weight: 700;
                     }
 
@@ -793,11 +793,11 @@
             grid-area: cnt_3;
             background-color: $clrbk;
             display: grid;
-            grid-auto-rows: 71px;
-            gap: 0px;
+            grid-auto-rows: 52px;
+            gap: 10px;
 
             &>div {
-                padding: 16px 0 16px 8px;
+                padding: 7px 0 7px 7px;
 
                 .cont_check {
                     display: grid;
@@ -826,7 +826,7 @@
                         justify-self: start;
                         align-self: center;
                         grid-area: lbl;
-                        font-size: 1.3em;
+                        font-size: 1.2em;
                         font-weight: 700;
                     }
 
