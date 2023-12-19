@@ -113,7 +113,7 @@
                         width: 100%;
                         max-width: 364px;
                         height: 43.43px;
-                        font-size: 1em;
+                        font-size: 1.2em;
                         font-weight: 500;
                         text-transform: uppercase;
                         color: $clr2;
@@ -125,7 +125,7 @@
                             width: 100%;
                             height: 100%;
                             border: none;
-                            font-size: 1em;
+                            font-size: 1.2em;
 
                             &:focus {
                                 outline: none;
@@ -475,9 +475,9 @@
             }
 
             .gr_cupon {
-                width: 90%;
+                width: 100%;
                 height: max-content;
-                padding: 0px 50px 0 8px;
+                padding: 0px 0px 0 8px;
 
                 @include brk320 {
                     width: 100%;
@@ -485,9 +485,9 @@
                 }
 
                 @include brk711 {
-                    width: 90%;
+                    width: 100%;
                     height: max-content;
-                    padding: 9.33px 50px 3.61px 8px;
+                    padding: 9.33px 20px 3.61px 8px;
                 }
 
                 .title {
@@ -506,7 +506,7 @@
                     width: 100%;
                     max-width: 291px;
                     height: 43.43px;
-                    font-size: 0.8em;
+                    font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;
                     color: $clr2;
@@ -522,7 +522,7 @@
                         width: 100%;
                         height: 100%;
                         border: none;
-                        font-size: 1em;
+                        font-size: 1.2em;
                         text-align: center;
 
                         &:focus {
@@ -590,7 +590,7 @@
                     width: 100%;
                     max-width: 291px;
                     height: 43.43px;
-                    font-size: 0.8em;
+                    font-size: 1.2em;
                     font-weight: 500;
                     text-transform: uppercase;
                     color: $clr2;
